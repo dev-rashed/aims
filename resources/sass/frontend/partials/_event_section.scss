@@ -1,0 +1,36 @@
+.event-section {
+    .card {
+        .date {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            padding: 4px 12px;
+            width: 56px;
+            height: 54px;
+            left: 14px;
+            top: 13px;
+            background: #FFFFFF;
+            border-radius: 12px;
+            .day {
+                font-size: $h4-font-size;
+                font-weight: bold;
+                color: $primary-900;
+                line-height: 1;
+            }
+            .month {
+                font-size: $font-size-base;
+                color: $primary-900;
+                line-height: 1;
+            }
+        }
+        img {
+            height: 280px;
+            border-radius: 20px 20px 0px 0px;
+        }
+        .card-body {
+            padding: 32px 30px;
+        }
+    }
+}

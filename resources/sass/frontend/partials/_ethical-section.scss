@@ -1,0 +1,45 @@
+.ethical-section {
+    .ethical-shape {
+        position: absolute;
+        margin-left: -135px;
+        z-index: -1;
+        margin-top: 5px;
+        // max-width: 100%;
+        @include media-breakpoint-down(xl) {
+            display: none;
+        }
+        @include media-breakpoint-down(xxl) {
+            margin-left: -63px;
+            margin-top: 9px;
+            max-width: 100%;
+        }
+    }
+    .top-heading {
+        color: $primary-500;
+        font-weight: $font-weight-bolder;
+        text-align: center;
+    }
+
+    .sticky_menu_wrapper {
+        padding-left: 0;
+        list-style: none;
+        z-index: 9;
+        height: 400px;
+        background-color: transparent;
+        margin-bottom: 0;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 180px;
+
+        li {
+            margin-bottom: 12px;
+        }
+        .sticky_menu_item {
+            color: #a4aaaf;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.6;
+            transition: color .2s;
+        }
+    }
+}

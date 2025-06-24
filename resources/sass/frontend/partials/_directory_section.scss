@@ -1,0 +1,161 @@
+.directory-section {
+    .form-group {
+        label {
+            font-weight: $font-weight-medium;
+            font-size: 14px;
+            line-height: 24px;
+            color: $gray-500;
+            margin-bottom: 10px;
+        }
+        // .input-icon {
+        //     top: 53px;
+        // }
+        input.form-control {
+            padding: 12px 16px 12px 35px;
+            color: $gray-900;
+            font-weight: $font-weight-bold;
+        }
+    }
+    .search-btn {
+        margin-top: 30px;
+    }
+
+    .therapist-area {
+        display: flex;
+
+    }
+    .therapist-img {
+        display: inline;
+        margin: 0 auto;
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: top center;
+        object-position: top center;
+        border: 1px solid $primary-500;
+        padding: 1px;
+    }
+
+    .filters-area {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #FFF2F1;
+        z-index: 9999;
+        color: #fff;
+        overflow: auto;
+        .filter-area {
+            border-bottom: 1px solid $gray-300;
+            margin-bottom: 20px;
+        }
+        .form-check-input {
+            border-color: #757575 !important;
+            width: 14px;
+            height: 14px;
+            border-radius: 2px;
+            margin-top: 6px;
+            &:focus {
+                box-shadow: 0 0 0 0 $primary-100 !important;
+            }
+            &:checked {
+                background-color: $primary-500 !important;
+                border-color: $primary-500 !important;
+            }
+        }
+        .btn-search {
+            position: absolute;
+            background-color: $primary-500;
+            top: 6px;
+            right: 5px;
+            &:focus {
+                outline: none;
+            }
+            path {
+                fill: $white;
+            }
+        }
+        .filter-close {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 999999;
+            cursor: pointer;
+        }
+        .filtering {
+            margin: 0 30px;
+            margin-top: 20px;
+        }
+        .distance-label {
+            color: #333;
+        }
+    }
+
+    .distance {
+        width: 70px;
+        padding: 1px;
+        border: 1px solid #dbdfe4;
+        border-radius: 4px;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 5px;
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .ui-slider {
+        &.ui-widget-content {
+            background: $gray-200;
+            height: 0.5em;
+            border: none;
+        }
+        .ui-slider-horizontal {
+            margin-top: 15px;
+        }
+        .ui-slider-handle {
+            background: $primary-600 !important;
+            width: 15px !important;
+            height: 15px !important;
+            border-radius: 50% !important;
+            border: none !important;
+            top: -.3em !important;
+            cursor: pointer !important;
+            &:focus-visible {
+                outline: none;
+            }
+        }
+    }
+}
+
+:is(.directory-section, .neurologist-profile-section) {
+    .btn-bookmark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f6f6f6;
+        border: 1px solid #f6f6f6;
+        color: #5e5e5e;
+        font-weight: $font-weight-bold;
+        padding: 12px 5px;
+        border-radius: 10px;
+        svg {
+            margin-right: 5px;
+            path {
+                fill: $primary-500;
+            }
+        }
+        &.saved {
+            svg {
+                margin-right: 5px;
+                path {
+                    fill: $primary-500;
+                }
+            }
+        }
+    }
+}

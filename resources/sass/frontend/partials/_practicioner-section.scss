@@ -1,0 +1,18 @@
+.practicioner-section {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    .practicioner-shape {
+        position: absolute;
+        top: -80px;
+        right: -60px;
+        max-width: 426px;
+        z-index: -1;
+    }
+    .heading-after {
+        &:after {
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+    }
+}

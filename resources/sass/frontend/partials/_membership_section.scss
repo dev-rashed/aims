@@ -1,0 +1,255 @@
+@mixin priceCard($child, $bg, $color) {
+    &:nth-child(#{$child}) {
+        .card-header {
+            background-color: $bg;
+            color: $color;
+            .card-title {
+                &:after {
+                    background-color: $color;
+                }
+            }
+        }
+        .btn {
+            background-color: $color;
+            &:hover {
+                background-color: rgba($color, 0.9) !important;
+                border-color: $color !important;
+            }
+        }
+    }
+}
+.membership-img {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.membership-top-section {
+    .container {
+        padding-bottom: 540px;
+        @include media-breakpoint-up(md) {
+            padding-bottom: 550px;
+        }
+        @include media-breakpoint-up(lg) {
+            padding-bottom: 0px;
+        }
+    }
+    .image-layer {
+        position: absolute;
+        bottom: -81px;
+        z-index: 1;
+        margin-bottom: 0;
+        right: 0;
+    }
+}
+.membership-section {
+    .membership {
+        .icon {
+            width: 60px;
+            height: 60px;
+            background-color: $primary-500;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .membership-plan {
+        min-height: 1000px;
+        position: relative;
+        .card {
+            background-color: #EEEEEE;
+            .btn {
+                padding: 14px 56px;
+                color: $white;
+                text-transform: uppercase;
+
+            }
+            .des__area {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                text-align: center;
+                bottom: 20px;
+            }
+        }
+        .card-header {
+            min-height: 260px;
+            padding-bottom: 10px;
+            div {
+                position: relative;
+                top: 80px;
+            }
+            .card-title {
+                position: relative;
+                padding-bottom: 10px;
+                font-size: 27px;
+                line-height: 30px;
+                &:after {
+                    width: 100%;
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 2px;
+                }
+            }
+        }
+        @include priceCard(1, #DDE7E3, #44AD80);
+        @include priceCard(2, #DAE5E9, #2592BA);
+        @include priceCard(3, #EFE8D9, $yellow);
+        @include priceCard(4, #E8D8DF, #B1135A);
+    }
+    .tabs-buttons {
+        // width: 310px;
+        margin: auto;
+    }
+    .nav-pills {
+
+        .nav-link {
+            color: $white !important;
+            text-transform: uppercase;
+            padding: 12px 24px;
+            background-color: $primary-600;
+            &#pills-monthly-tab {
+                border-bottom-right-radius: 0;
+                border-top-right-radius: 0;
+            }
+            &#pills-yearly-tab {
+                border-bottom-left-radius: 0;
+                border-top-left-radius: 0;
+            }
+            &.active {
+                background-color: $yellow !important;
+            }
+        }
+    }
+
+}
+
+.section-checkout {
+    background-repeat: no-repeat;
+    background-size: cover;
+    .stepper-wrapper {
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        margin: 25px auto;
+        width: 80%;
+        .stepper-item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+            @media (max-width: 768px) {
+                font-size: 12px;
+            }
+            &:before {
+                position: absolute;
+                content: "";
+                border-bottom: 2px solid $gray-500;
+                width: 100%;
+                top: 16px;
+                left: -50%;
+                z-index: 2;
+            }
+            &:after {
+                position: absolute;
+                content: "";
+                border-bottom: 2px solid $gray-500;
+                width: 100%;
+                top: 16px;
+                left: 50%;
+                z-index: 2;
+            }
+            &.active {
+                .step-counter {
+                    border-color: $primary-500;
+                    color: $primary-500;
+                }
+            }
+            &.completed {
+                .step-counter {
+                    border-color: $primary-500;
+                    background-color: $primary-500;
+                    color: $white;
+                }
+                &:after {
+                    position: absolute;
+                    content: "";
+                    border-bottom: 2px solid $primary-500;
+                    width: 100%;
+                    top: 16px;
+                    left: 50%;
+                    z-index: 3;
+                }
+            }
+            &:first-child::before {
+                content: none;
+            }
+            &:last-child::after {
+                content: none;
+            }
+
+            .step-counter {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 5;
+                padding: 4px 12px;
+                width: 31px;
+                height: 32px;
+                background-color: $gray-100;
+                border: 1px solid $gray-100;
+                border-radius: 5px;
+                font-weight: $font-weight-bold;
+                font-size: 16px;
+                line-height: 24px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .card-body {
+        @include media-breakpoint-up(xl) {
+            margin: 0 30px;
+        }
+        .membership-plans {
+            width: 400px;
+            margin: 0 auto 16px auto;
+            .membership-plan {
+                border: 1px solid $gray-200;
+                padding: 16px;
+                font-size: 16px;
+                line-height: 20px;
+                color: $gray-700;
+                cursor: pointer;
+                text-transform: capitalize;
+                &.active {
+                    background-color: $primary-500;
+                    border-color: $primary-500;
+                    color: $white;
+                }
+                &:first-of-type {
+                    border-radius: 5px 5px 0px 0px;
+                }
+                &:last-of-type {
+                    border-radius: 0px 0px 5px 5px;
+                }
+            }
+        }
+    }
+
+    .input-icon {
+        position: absolute;
+        top: 18%;
+        left: 10px;
+    }
+    .padding-right {
+        padding-left: 32px;
+    }
+
+    .btn {
+        padding: 12px 48px;
+    }
+}

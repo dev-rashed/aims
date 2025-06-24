@@ -1,0 +1,153 @@
+$navbar-padding-y: 0;
+$navbar-padding-x: 0;
+$navbar-brand-padding-y: 0;
+
+.navbar {
+    background-color: #fff;
+    // background-color: $primary-500;
+    &.scrolling {
+        background-color: $primary-500;
+        box-shadow: $box-shadow-lg;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+    }
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border-radius: 8px 8px 8px 8px;
+        transition: 1s ease !important;
+        @include media-breakpoint-up(lg) {
+            padding: 5px 0;
+        }
+
+        // &.scroll-top {
+        //     background-color: $primary-700;
+        //     padding: 15px 20px;
+        // }
+        .navbar-brand {
+            img {
+                width: 140px;
+                height: 80px;
+                object-fit: contain;
+            }
+        }
+        .navbar-nav {
+            .nav-item {
+                position: relative;
+                &:not(:first-child) {
+                    margin-left: 10px;
+                }
+                .nav-link {
+                    font-weight: $font-weight-medium;
+                    color: #000;
+                    font-size: 16px;
+                    :is(&:hover, &.active) {
+                        color: $yellow !important;
+                    }
+                    svg {
+                        margin-left: 5px;
+                        path {
+                            stroke: $white;
+                        }
+                    }
+                }
+                .dropdown-menu {
+                    list-style: none;
+                    background: $primary-500;
+                    width: 220px;
+                    border: none;
+                }
+                &:hover {
+                    .dropdown-menu {
+                        display: block !important;
+                    }
+                }
+            }
+        }
+        .nav-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 32px;
+            background-color: $white;
+            border: 2px solid $white;
+            box-shadow: $box-shadow-sm;
+            border-radius: 10px;
+            &:hover {
+                border: 2px solid $yellow !important;
+                path {
+                    fill: $white;
+                }
+            }
+            path {
+                fill: $dark;
+            }
+        }
+        .bookmark {
+            position: relative;
+            .data-count {
+                position: absolute;
+                content: '';
+                top: 0;
+                right: -7px;
+                background: $primary-500;
+                border-radius: 50px;
+                color: $white;
+                font-size: 12px;
+                line-height: 1;
+                padding: 3px 6px;
+                border: 1.5px solid $white;
+            }
+            svg {
+                path {
+                    fill: $white;
+                }
+            }
+        }
+    }
+
+    &.white-navbar {
+        background-color: $white;
+        box-shadow: $box-shadow-sm;
+        .main-nav {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        color: $gray-900;
+                        svg {
+                            margin-left: 5px;
+                            path {
+                                stroke: $gray-900;
+                            }
+                        }
+                    }
+                    .dropdown-menu {
+                        a {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            .bookmark {
+                svg {
+                    path {
+                        fill: $gray-900;
+                    }
+                }
+            }
+            .humbarger-icon {
+                svg {
+                    path {
+                        fill: $gray-900;
+                    }
+                }
+            }
+        }
+
+    }
+}

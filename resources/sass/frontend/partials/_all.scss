@@ -1,0 +1,91 @@
+.counsellor-section {
+    .card {
+        min-height: 165px;
+    }
+}
+
+.testimonial-section {
+    @include media-breakpoint-up(xl) {
+        .tes-text {
+            border-left: 1px solid $gray-300;
+        }
+    }
+}
+.checkout-section {
+    .input-icon {
+        position: absolute;
+        top: 26%;
+        left: 10px;
+    }
+    .padding-right {
+        padding-left: 32px;
+    }
+}
+
+.custom-tooltip {
+    .tooltip-inner {
+        border: 1px solid #dbdfe4;
+        text-align: left;
+    }
+}
+
+.ui-slider-range {
+    background-color: $primary-600;
+}
+.price-input {
+	width: 100%;
+	display: flex;
+	margin: 30px 0 35px;
+	color: $gray-900;
+	.field {
+		display: flex;
+		width: 100%;
+		height: 45px;
+		align-items: center;
+        position: relative;
+        .currency {
+            position: absolute;
+            left: 50px;
+            &.currency-max {
+                left: 54px;
+            }
+        }
+	}
+	.separator {
+		width: 130px;
+		display: flex;
+		font-size: 19px;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.field {
+	input {
+		width: 100%;
+		height: 100%;
+		outline: none;
+		font-size: 19px;
+		margin-left: 12px;
+		border-radius: 5px;
+		text-align: center;
+		border: 1px solid #999;
+		-moz-appearance: textfield;
+	}
+}
+input[type="number"] {
+	&::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+	}
+	&::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+	}
+}
+
+
+$tooltip-max-width: 350px;
+$tooltip-color: #112f49;
+$tooltip-bg: #f6f6f6;
+$tooltip-padding-y: $spacer * 1;
+$tooltip-padding-x: $spacer * 1;
+$tooltip-arrow-width: 1rem;
+$tooltip-arrow-height: .8rem;

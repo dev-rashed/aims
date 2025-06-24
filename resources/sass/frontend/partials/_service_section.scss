@@ -1,0 +1,166 @@
+.service-section {
+    // @include media-breakpoint-up(lg) {
+    //     margin-top: 70px;
+    // }
+    .card {
+        .service-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+            width: 48px;
+            height: 48px;
+            background: $primary-100;
+            border-radius: 50px;
+            img {
+                width: 20px;
+            }
+        }
+    }
+    .service-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 24px;
+        background-color: $white;
+        box-shadow: $box-shadow-sm;
+        border-radius: 20px;
+        transition: border-color 1s ease !important;
+        cursor: pointer;
+        margin-top: 20px;
+        height: 100%;
+        border: 1px solid $white;
+        .service-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+            width: 98px;
+            height: 98px;
+            background: $primary-100;
+            border-radius: 50px;
+
+        }
+        .title {
+            font-size: $h5-font-size;
+            font-weight: $font-weight-bold;
+            color: $primary-600;
+        }
+        .content {
+            font-weight: $font-weight-bold;
+            color: $gray-600;
+            min-height: 100px;
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            border-color: $primary-500;
+        }
+    }
+    .designation-text {
+        color: #3B4C68;
+        opacity: 0.5;
+    }
+    .text-desc {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: justify;
+
+        &.read-more {
+            font-weight: 350;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0px;
+            text-align: justify;
+
+        }
+    }
+    .advisor-item {
+        .advisor-item-img {
+            width: 228px;
+            height: 228px;
+            border-radius: 100%;
+            object-fit: cover;
+            margin: auto;
+        }
+    }
+    .advisor-carousel-buttons {
+        .advisor-carousel-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border: 1px solid $primary-500;
+            border-color: rgba($primary-500, 0.8);
+            background: rgba($primary-500, 0.8);
+            border-radius: 10px;
+            position: absolute;
+            top: 17%;
+            z-index: 9;
+            &:hover {
+                background: rgba($primary-500, 1);
+            }
+            &[data-type="prev"] {
+                left: 8px;
+            }
+            &[data-type="next"] {
+                right: 8px;
+            }
+            @include media-breakpoint-up(sm) {
+                top: 22%;
+                width: 50px;
+                height: 50px;
+                &[data-type="prev"] {
+                    left: 0;
+                }
+                &[data-type="next"] {
+                    right: 0;
+                }
+            }
+        }
+    }
+    .advisor-item-btn {
+        background-color: $primary-500;
+        color: $white;
+        transition: all 0.5s ease-in-out;
+        width: 128px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        &:focus,
+        &:active {
+            background-color: $primary-500;
+            border-color: $primary-500;
+            color: $white;
+        }
+    }
+}
+
+.ambassador-card {
+    @include media-breakpoint-up(lg) {
+        &.even {
+            h4 ,
+            .texts-area-scrollbar {
+                direction: rtl;
+                text-align: justify;
+                padding-left: 16px;
+            }
+        }
+    }
+
+}
+.ambassador-img-section {
+    background-image: url('/resources/images/ambassador-img.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    height: 300px;
+    border-radius: 4px;
+    background-size: cover;
+}
+

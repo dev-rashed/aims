@@ -1,0 +1,17 @@
+.error-section {
+    height: 696px;
+    background-size: cover;
+    background-position: center;
+
+    .heading {
+        font-weight: 900;
+        font-size: 200px;
+        color: $white;
+        margin-bottom: 0;
+    }
+    .sub-heading {
+        font-weight: 700;
+        font-size: 47.162px;
+        line-height: 71px;
+    }
+}

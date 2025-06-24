@@ -1,0 +1,1 @@
+<x-frontend.error status="403" title="Forbidden" :message="$exception->getMessage() ?: 'Forbidden'" />

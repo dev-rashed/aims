@@ -1,0 +1,54 @@
+.about-section {
+    .about-img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: center center;
+        border-radius: 20px 20px 20px 20px;
+    }
+    .about-card {
+        text-align: center;
+        .icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            background-color: rgba(#D8FFEF, 1);
+            &.icon-advisor {
+                background-color: rgba(#FFECF5, 1);
+            }
+            &.icon-global {
+                background-color: rgba(#FFF3DA, 1);
+            }
+        }
+        .about-btn {
+            background-color: #2592BA;
+            color: $white;
+            transition: all 0.5s ease-in-out;
+            width: 128px;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+    }
+
+}
+
+.objectives-section {
+    .objectives-card {
+        .card-body {
+            padding: 40px;
+            h3 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}

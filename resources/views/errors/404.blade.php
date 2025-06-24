@@ -1,0 +1,1 @@
+<x-frontend.error status="404" title="Not Found" message="OPPS! PAGE NOT FOUND" />

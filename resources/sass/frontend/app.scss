@@ -1,0 +1,52 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+@import "nice-select2/dist/css/nice-select2.css";
+
+@import 'owl.carousel/src/scss/owl.carousel';
+@import 'owl.carousel/src/scss/owl.theme.default';
+
+@import "./partials/variables";
+@import "./partials/functions";
+@import "./partials/base";
+
+@import "./partials/navbar";
+@import "./partials/mobile_navbar";
+
+@import "./partials/hero_section";
+@import "./partials/service_section";
+@import "./partials/event_section";
+@import "./partials/video_section";
+@import "./partials/article-section";
+@import "./partials/article-details-section";
+@import "./partials/footer_section";
+@import "./partials/error_section";
+@import "./partials/directory_section";
+@import "./partials/membership_section";
+@import "./partials/education_section";
+@import "./partials/course_section";
+@import "./partials/whatson_section";
+@import "./partials/auth_section";
+@import "./partials/feature_blog_section";
+@import "./partials/practicioner-section";
+@import "./partials/ethical-section";
+@import "./partials/ethical-framework";
+@import "./partials/subscribe-section";
+@import "./partials/about-section";
+@import "./partials/team_section";
+
+@import './partials/owl_carowsel';
+
+@import "./partials/back_to_top";
+@import "./partials/carousel_button";
+
+
+@import "./partials/nice_select";
+@import "./partials/select2";
+
+@import "./partials/all";
+
+@import "./partials/responsive";
+
+@import "~bootstrap/scss/bootstrap";

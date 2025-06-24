@@ -1,0 +1,27 @@
+.auth-section {
+    .form-group {
+        position: relative;
+        margin-bottom: 24px;
+        img {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .form-control {
+            background-color: transparent;
+            border-color: $primary-500;
+            height: 50px;
+            color: $gray-700;
+            font-size: 16px;
+            padding: 16px;
+        }
+    }
+    .form-check-input {
+        width: 18px !important;
+        height: 18px !important;
+        border-radius: 0 !important;
+    }
+    button[type="submit"] {
+        padding: 12px 80px;
+    }
+}

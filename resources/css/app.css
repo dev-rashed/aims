@@ -1,0 +1,9 @@
+@import '../assets/staff/plugins/select2/css/select2.min.css';
+@import '../assets/staff/plugins/select2/css/select2-bootstrap4.css';
+@import '../assets/staff/plugins/notifications/css/lobibox.min.css';
+@import 'https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css';
+@import 'intl-tel-input/build/css/intlTelInput.css';
+
+.iti {
+    width: 100%;
+}

@@ -1,0 +1,102 @@
+.subscribe-section {
+    position: relative;
+    .pattern-layer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        background-color: rgba($primary-500, 1);
+    }
+    .text {
+        position: relative;
+        display: block;
+        padding: 0px 0px 0px 100px;
+        margin-top: 3px;
+        color: $white;
+        .icon-box {
+            position: absolute;
+            left: 0px;
+            top: -3px;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            background: #fff;
+            font-size: 30px;
+            text-align: center;
+            border-radius: 50%;
+            svg {
+                rotate: 50deg;
+                path {
+                    fill: rgba($primary-500, 1);
+                }
+            }
+        }
+    }
+    .subscribe-form .form-group {
+        position: relative;
+        margin: 0px;
+        input[type='email'] {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 70px;
+            padding: 10px 200px 10px 30px;
+            background: #fff;
+            border: 1px solid #fff;
+            border-radius: 35px;
+            font-size: 15px;
+            color: $gray-500;
+            transition: all 500ms ease;
+            &:focus,
+            &:focus-visible {
+                border-color: $primary-500;
+            }
+            @include media-breakpoint-down(sm){
+                padding-right: 30px;
+            }
+        }
+        button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            display: inline-block;
+            overflow: hidden;
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 500;
+            color: $white;
+            text-align: center;
+            padding: 12px 29px;
+            border-radius: 30px;
+            box-shadow: 0px 10px 30px 0px rgba($primary-500, 0.4);
+            z-index: 1;
+            transition: all 500ms ease;
+            background-color: $primary-500;
+            &:before {
+                position: absolute;
+                content: '';
+                width: 0%;
+                height: 100%;
+                background: #0d1927;
+                border-radius: 30px;
+                left: 0px;
+                top: 0px;
+                z-index: -1;
+                transition: all 500ms ease;
+            }
+            @include media-breakpoint-down(sm){
+                position: relative;
+                top: 0px;
+                right: 0px;
+                margin-top: 15px;
+                display: block;
+                width: 100%;
+                background-color: $yellow;
+            }
+
+        }
+    }
+}

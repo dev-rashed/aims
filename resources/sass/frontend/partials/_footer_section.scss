@@ -1,0 +1,36 @@
+.footer-section {
+    background-color: $gray-100;
+    padding-top: 120px;
+
+    .copyright {
+        margin-top: 70px;
+        margin-bottom: 10px;
+    }
+}
+.footer-form-group {
+    position: relative;
+    img {
+        position: absolute;
+        top: 22px;
+        left: 15px;
+    }
+    input {
+        background: transparent;
+        border: 1px solid $gray-300;
+        border-radius: 5px;
+        padding: 16px 16px 16px 36px;
+        font-size: 16px;
+        color: $gray-600;
+        margin-bottom: 20px;
+    }
+
+    button[type="submit"] {
+        background-color: $primary-500;
+        width: 100%;
+        padding: 10px 0;
+        color: $white;
+        border-radius: 5px;
+        text-transform: uppercase;
+        letter-spacing: 4.9px;
+    }
+}

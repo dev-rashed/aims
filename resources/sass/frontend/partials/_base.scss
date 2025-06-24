@@ -1,0 +1,208 @@
+::selection {
+    color: $white;
+    background: $primary-800;
+}
+
+body {
+    font-family: $font-primary !important;
+}
+
+.btn-circle {
+    padding: 8px 36px !important;
+    border-radius: 24px !important;
+    &:hover {
+        color: $white !important;
+    }
+}
+
+.shadow-primary {
+    background: #D9D9D9;
+    box-shadow: 0px 10px 20px rgba(243, 131, 4, 0.2);
+}
+.form-control {
+    &:focus {
+        background-color: #fff;
+        border-color: $primary-800 !important;
+        outline: 0;
+        box-shadow: 0 0 0 0 !important;
+    }
+}
+.btn-check,
+.btn {
+    &:focus,
+    &:focus-visible {
+        outline: 0 !important;
+        box-shadow: none !important;
+    }
+}
+.btn-close:focus {
+    box-shadow: 0 0 0 0 rgb(13 110 253 / 25%) !important;
+}
+
+.form-check-input {
+    border-color: #757575 !important;
+    &:focus {
+        box-shadow: 0 0 0 0 $primary-100 !important;
+    }
+    &:checked {
+        background-color: $primary-800 !important;
+        border-color: $primary-800 !important;
+    }
+}
+
+.section {
+    padding: 80px 0;
+}
+
+a {
+    text-decoration: none !important;
+    &:hover {
+        color: $primary-800 !important;
+    }
+}
+
+.btn {
+    &:hover {
+        background-color: $yellow !important;
+        border-color: $yellow !important;
+        color: $white !important;
+    }
+}
+
+.bg-p-right {
+    background-position: right;
+}
+.bg-p-left {
+    background-position: left;
+}
+.bg-p-bottom {
+    background-position: bottom;
+}
+.bg-s-cover {
+    background-size: cover;
+}
+.bg-r-no {
+    background-repeat: no-repeat;
+}
+.text {
+    font-size: 17px;
+    line-height: 32px;
+    font-weight: 500;
+}
+.section-heading {
+    // text-align: center;
+    .heading {
+        font-weight: $font-weight-medium;
+        font-size: $h3-font-size;
+        color: $primary-500;
+        @include media-breakpoint-up(md) {
+            font-size: $h1-font-size;
+        }
+    }
+    .sub-heading {
+        font-weight: $font-weight-medium;
+        font-size: 16px;
+        line-height: 24px;
+        color: $primary-800;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 15px;
+    }
+    .description {
+        font-size: 16px;
+        line-height: 25px;
+        color: $gray-600;
+        @include media-breakpoint-up(lg) {
+            width: 540px;
+            // margin: auto;
+        }
+    }
+}
+
+.section {
+    .icon-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 5px;
+        background-color: $primary-500;
+        border-color: $primary-500;
+        border-radius: 10px;
+        font-weight: $font-weight-medium;
+        font-size: 14px;
+        line-height: 24px;
+        color: $white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        // width: 232px;
+    }
+    .heading-after {
+        position: relative;
+        padding-bottom: 10px;
+        &:after {
+            width: 100px;
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: $primary-500;
+            height: 1.5px;
+        }
+        &.after-bg-yellow {
+            &:after {
+                background-color: $yellow;
+            }
+        }
+    }
+    .article-img {
+        border-radius: 20px 20px 0 0;
+        -webkit-border-radius: 20px 20px 0 0;
+        -moz-border-radius: 20px 20px 0 0;
+        -ms-border-radius: 20px 20px 0 0;
+        -o-border-radius: 20px 20px 0 0;
+        // max-height: 180px;
+        width: 100%;
+    }
+    .texts-area-scrollbar {
+        max-height: 200px;
+        overflow-y: auto;
+        font-size: 14px;
+        font-weight: 300;
+        padding-right: 8px;
+        /* width */
+        &::-webkit-scrollbar {
+            width: 6px;
+            height: 5px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            // border-radius: 10px;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            // border-radius: 10px;
+            background: #888;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    }
+}
+
+.read-more-btn {
+    background-color: $yellow !important;
+    text-transform: uppercase;
+    color: $white !important;
+    padding: 9px 16px !important;
+
+    &:hover {
+        background-color: $gray-900 !important;
+        border-color: $gray-900 !important;
+    }
+}

@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@import 'notyf/notyf.min.css';
+@import 'intl-tel-input/build/css/intlTelInput.css';
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+@import "./components/select2";
+
+@import "tailwindcss/utilities";
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@layer base {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-semibold;
+    }
+    h1 {
+        @apply text-4xl;
+    }
+    h2 {
+        @apply text-3xl;
+    }
+    h3 {
+        @apply text-2xl;
+    }
+    h4 {
+        @apply text-xl;
+    }
+    h5 {
+        @apply text-lg;
+    }
+    ul {
+        @apply p-0 list-none;
+    }
+}
+
+@layer components {
+    .aside-link {
+        @apply flex gap-x-[10px] items-center py-3 px-4 rounded-xl transition-colors font-medium text-dark hover:bg-primary-100 hover:text-primary;
+    }
+    .aside-link.active {
+        background-color: #c2f0ff;
+        @apply text-primary font-semibold;
+    }
+    .translate {
+        transform: translate(-50%, -50%);
+    }
+    .form-control {
+        @apply w-full px-4 py-3 rounded-md bg-light border border-light focus:ring-0 focus-visible:outline-none placeholder:text-dark;
+    }
+    .form-file {
+        @apply block w-full px-4 py-3 rounded-md text-sm text-dark border border-light bg-light focus:outline-none;
+    }
+    .form-control.is-invalid,
+    .form-file.is-invalid {
+        @apply border-warning;
+    }
+    input:focus-visible {
+        @apply focus-visible:outline-none;
+    }
+    .submit-btn {
+        @apply flex items-center justify-center bg-primary py-3 px-8 rounded-lg text-white font-semibold disabled:opacity-[0.7];
+    }
+
+    .submit-btn.btn-loading {
+        filter: blur(0.5px) grayscale(.4);
+        opacity: 0.9;
+        pointer-events: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+
+    [x-cloak] {
+        display: none;
+    }
+
+    .svg-icon {
+        width: 1em;
+        height: 1em;
+    }
+
+    .svg-icon path,
+    .svg-icon polygon,
+    .svg-icon rect {
+        fill: #333;
+    }
+
+    .svg-icon circle {
+        stroke: #4691f6;
+        stroke-width: 1;
+    }
+    .pagination > li > a,
+    .pagination > li > span {
+        @apply text-primary dark:text-primary;
+    }
+
+    .pagination > .active > a,
+    .pagination > .active > a:focus,
+    .pagination > .active > a:hover,
+    .pagination > .active > span,
+    .pagination > .active > span:focus,
+    .pagination > .active > span:hover {
+        @apply bg-primary border-primary dark:bg-primary dark:border-primary;
+    }
+}
+
+.iti {
+    width: 100%;
+}
+.bootstrap-tagsinput {
+    @apply flex flex-wrap w-full px-4 py-2 rounded-md bg-light border border-light focus:ring-0 focus-visible:outline-none placeholder:text-dark shadow-none;
+}
+.bootstrap-tagsinput .badge {
+    @apply text-white py-1 px-2 rounded-sm;
+}
+.visually-hidden, .visually-hidden-focusable:not(:focus):not(:focus-within) {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}

@@ -1,0 +1,18 @@
+.owl-stage-outer {
+    padding-bottom: 20px;
+}
+.owl-dots {
+    .owl-dot {
+        span {
+            width: 12px !important;
+            height: 12px !important;
+            border: 1px solid $primary-500;
+            background-color: $white !important;
+        }
+        &.active {
+            span {
+                background-color: $primary-500 !important;
+            }
+        }
+    }
+}
