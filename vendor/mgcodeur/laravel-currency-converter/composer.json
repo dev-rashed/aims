@@ -1,0 +1,85 @@
+{
+    "name": "mgcodeur/laravel-currency-converter",
+    "description": "Laravel Currency Converter: Effortlessly convert currencies in your Laravel applications, no API key required. It's fast, easy, and completely free.",
+    "keywords": [
+        "mgcodeur",
+        "laravel",
+        "laravel-currency-converter"
+    ],
+    "homepage": "https://github.com/mgcodeur/laravel-currency-converter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mgcodeur",
+            "email": "mgcodeur@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1||^8.2",
+        "spatie/laravel-package-tools": "^1.14.0",
+        "illuminate/contracts": "^10.0||^11.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^7.10.0||^8.1.1",
+        "larastan/larastan": "^2.0.1",
+        "orchestra/testbench": "^8.22.0||^9.0.0",
+        "pestphp/pest": "^2.20",
+        "pestphp/pest-plugin-arch": "^2.0",
+        "pestphp/pest-plugin-laravel": "^2.0",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-deprecation-rules": "^1.0",
+        "phpstan/phpstan-phpunit": "^1.0",
+        "spatie/laravel-ray": "^1.26"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mgcodeur\\CurrencyConverter\\": "src/",
+            "Mgcodeur\\CurrencyConverter\\Database\\Factories\\": "database/factories/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mgcodeur\\CurrencyConverter\\Tests\\": "tests/",
+            "Workbench\\App\\": "workbench/app/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "@composer run prepare",
+        "clear": "@php vendor/bin/testbench package:purge-laravel-currency-converter --ansi",
+        "prepare": "@php vendor/bin/testbench package:discover --ansi",
+        "build": [
+            "@composer run prepare",
+            "@php vendor/bin/testbench workbench:build --ansi"
+        ],
+        "start": [
+            "Composer\\Config::disableProcessTimeout",
+            "@composer run build",
+            "@php vendor/bin/testbench serve"
+        ],
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mgcodeur\\CurrencyConverter\\CurrencyConverterServiceProvider"
+            ],
+            "aliases": {
+                "CurrencyConverter": "Mgcodeur\\CurrencyConverter\\Facades\\CurrencyConverter"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
