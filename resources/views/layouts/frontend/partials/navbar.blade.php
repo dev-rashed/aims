@@ -3,7 +3,8 @@
         <div class="main-nav">
 
             <a class="navbar-brand" href="/">
-                <img src="{{ uploadedFile(setting('footer_logo')) }}" id="logo" alt="" srcset="">
+                <img src="https://aimsonline.org/storage/setting/Wn2qX7Y1EebwNupz.png" id="logo" alt=""
+                    srcset="">
             </a>
 
             <div class="d-none d-lg-block" id="navbarSupportedContent">
