@@ -360,11 +360,11 @@
                 </ul>
                 <h4 class="menu-title">Find Support </h4>
                 <ul class="mobile-navbar-menu">
-                    <li><a href="#">Find A Counsellor</a></li>
-                    <li><a href="#">Find A Chaplain </a></li>
-                    <li><a href="#">Find A Coach </a></li>
-                    <li><a href="#">Find A Raqi </a></li>
-                    <li><a href="#">Find A Imam </a></li>
+                    <li><a href="https://aimsonline.org/directory">Find A Counsellor</a></li>
+                    <li><a href="https://aimsonline.org/directory">Find A Chaplain </a></li>
+                    <li><a href="https://aimsonline.org/directory">Find A Coach </a></li>
+                    <li><a href="https://aimsonline.org/directory">Find A Raqi </a></li>
+                    <li><a href="https://aimsonline.org/directory">Find A Imam </a></li>
                 </ul>
             </div>
 
