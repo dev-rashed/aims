@@ -46,15 +46,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 // if (config('app.env') == 'local') {
-    Route::get('test', function () {
-        return now()->createFromFormat('Y-m-d', '2024-02-03')->diffInMonths(now());
-    });
+Route::get('test', function () {
+    return now()->createFromFormat('Y-m-d', '2024-02-03')->diffInMonths(now());
+});
 
-    Route::get('/{id}/login', function ($id) {
-        Auth::loginUsingId($id);
-        return back();
-
-    })->name('passwordless.login')->middleware('guest:web');
+Route::get('/{id}/login', function ($id) {
+    Auth::loginUsingId($id);
+    return back();
+})->name('passwordless.login')->middleware('guest:web');
 // }
 
 Route::get('/', HomeController::class)->name('home');

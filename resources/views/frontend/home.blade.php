@@ -51,30 +51,39 @@
             <div class="row text-center justify-content-center g-4 circle-icon">
                 <!-- Counselling -->
                 <div class="col-12 col-md-3">
-                    <img src="{{ asset('images/info-icon-one.svg') }}" class="img-fluid mb-3" alt="Counselling Icon">
-                    <h4 class="text-success" style="color: #0d7554;">COUNSELLING</h4>
+                    <div class="info-box p-4">
+                        <img src="{{ asset('images/info-icon-one.svg') }}" class="img-fluid mb-3" alt="Counselling Icon">
+                        <h4 class="text-success">COUNSELLING</h4>
+                    </div>
                 </div>
 
                 <!-- Coaching -->
                 <div class="col-12 col-md-3">
-                    <img src="{{ asset('images/info-icon-two.svg') }}" class="img-fluid mb-3" alt="Coaching Icon">
-                    <h4 class="text-danger" style="color: #c70039;">COACHING</h4>
+                    <div class="info-box p-4">
+                        <img src="{{ asset('images/info-icon-two.svg') }}" class="img-fluid mb-3" alt="Coaching Icon">
+                        <h4 class="text-danger">COACHING</h4>
+                    </div>
                 </div>
 
                 <!-- Spiritual Direction -->
                 <div class="col-12 col-md-3">
-                    <img src="{{ asset('images/info-icon-three.svg') }}" class="img-fluid mb-3"
-                        alt="Spiritual Direction Icon">
-                    <h4 class=" text-warning" style="color: #f5a623;">SPIRITUAL DIRECTION</h4>
+                    <div class="info-box p-4">
+                        <img src="{{ asset('images/info-icon-three.svg') }}" class="img-fluid mb-3"
+                            alt="Spiritual Direction Icon">
+                        <h4 class="text-warning">SPIRITUAL DIRECTION</h4>
+                    </div>
                 </div>
 
                 <!-- Pastoral Care -->
                 <div class="col-12 col-md-3">
-                    <img src="{{ asset('images/info-icon-four.svg') }}" class="img-fluid mb-3" alt="Pastoral Care Icon">
-                    <h4 class="text-info" style="color: #0077b6;">PASTORAL CARE</h4>
+                    <div class="info-box p-4">
+                        <img src="{{ asset('images/info-icon-four.svg') }}" class="img-fluid mb-3" alt="Pastoral Care Icon">
+                        <h4 class="text-info">PASTORAL CARE</h4>
+                    </div>
                 </div>
             </div>
         </div>
+
 
         <div class="section">
             <!-- Bottom Section - Image Cards -->
@@ -600,6 +609,16 @@
             color: #000 !important;
         }
 
+        .info-box {
+            transition: all 0.3s ease;
+        }
+
+        .info-box:hover {
+            background-color: #eaf4ff;
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
 
         /* === Responsive === */
         @media (max-width: 1200px) {

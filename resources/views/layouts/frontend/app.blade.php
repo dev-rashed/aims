@@ -41,7 +41,8 @@
 
         <!-- Footer Section Start -->
         @if (!request()->is('admin*'))
-            @include('layouts.frontend.partials.footer')
+            {{-- @include('layouts.frontend.partials.footer') --}}
+            @include('layouts.frontend.partials.new-footer')
         @endif
         <!-- Footer Section End -->
 
