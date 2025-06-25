@@ -7,52 +7,8 @@
                     srcset="">
             </a>
 
-            <div class="d-none d-lg-block" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-
-                    {{-- <x-frontend.nav-link name="Directory" @class(['active' => Request::is('directory*')])
-                        href="{{ route('directory.index') }}" />
-
-                    @guest
-                        <x-frontend.nav-link name="Membership" @class(['active' => Request::is('membership*')])
-                            href="{{ route('membership.index') }}" />
-                    @endguest --}}
-                    {{-- <x-frontend.nav-link
-                        name="Education"
-                        @class(['active' => Request::is('course*')])
-                        href="javascript:void(0)"
-                        :submenu="true"
-                    >
-                        <ul class="dropdown-menu ">
-                            <li><a href="{{ route('course.index') }}?type=online" class="nav-link">Learning Hub</a></li>
-                            <li><a href="{{ route('course.index') }}?type=advanced" class="nav-link">Professional Courses</a></li>
-                        </ul>
-                    </x-frontend.nav-link> --}}
-                    {{-- <x-frontend.nav-link name="Insights" @class(['active' => Request::is('insight*')])
-                        href="{{ route('article.index') }}" />
-                    <x-frontend.nav-link name="About Us" @class(['active' => Request::is('about*')])
-                        href="{{ route('about.index') }}" />
-                    <x-frontend.nav-link name="Events" @class(['active' => Request::is('event*')])
-                        href="{{ route('event.index') }}" />
-                    @auth
-                        <x-frontend.nav-link name="Profile" href="{{ route('dashboard') }}" />
-                    @endauth --}}
-                </ul>
-            </div>
             <div class="d-flex align-items-center">
-                {{-- <div class="dropdown me-2">
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="currencyDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        @php($currency = session()->get('currency'))
-                        {{ $currency?->code ?? 'GBP' }}
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
-                        @foreach (DB::table('currencies')->get() as $currency)
-                            <li><a class="dropdown-item" href="{{ route('currency.index', $currency->id) }}">{{ $currency->name }}</a></li>
-                        @endforeach
-                    </ul>
-                </div> --}}
-
-                <a href="{{ route('neurologist.bookmark.data') }}" class="bookmark" data-count="5">
+                <a href="{{ route('neurologist.bookmark.data') }}" class="bookmark me-3" data-count="5">
                     <span class="data-count">5</span>
                     <svg width="24" height="49" viewBox="0 0 16 20" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -62,7 +18,7 @@
                     </svg>
                 </a>
                 @guest
-                    <a href="{{ route('login') }}" class="btn nav-btn d-none d-lg-block ms-3 me-3">
+                    <a href="{{ route('login') }}" class="btn nav-btn d-none d-lg-block me-3">
                         <svg width="14" height="14" viewBox="0 0 16 17" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -72,7 +28,7 @@
                         <span class="fs-14 fw-bold">Login</span>
                     </a>
                 @else
-                    <a href="{{ route('logout') }}" class="btn nav-btn d-none d-lg-block ms-3" id="logout">
+                    <a href="{{ route('logout') }}" class="btn nav-btn d-none d-lg-block me-3" id="logout">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -85,7 +41,7 @@
                         Logout
                     </a>
                 @endguest
-                <a href="{{ route('membership.index') }}" class="join-btn">
+                <a href="{{ route('membership.index') }}" class="join-btn me-3">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -93,7 +49,7 @@
                     </svg>
                     Join Aims
                 </a>
-                <div class="humbarger-icon ms-4" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                <div class="humbarger-icon" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
                     style="cursor: pointer;">
                     <svg version="1.1" width="15px" height="11px" viewBox="0 0 15.0 11.0"
@@ -187,9 +143,14 @@
         border-radius: 23px;
     }
 
+
+    .fixed-top {
+        top: -1px;
+    }
+
     .humbarger-icon svg {
-        /* width: 20px;
-        height: 20px; */
+        width: 12px;
+        height: 12px;
         fill: #33637e;
         font-weight: 700;
     }
@@ -200,7 +161,109 @@
         color: #33637e;
     }
 
-    .mobile-menu-wrapper {
+    .bookmark svg {
+        height: 68px;
+        width: 35px;
+    }
+
+    .navbar .main-nav .bookmark .data-count {
+        right: -12px;
+        font-size: 20px;
+        top: -4px;
+    }
+
+    #navbarSupportedContent {
+        margin-top: 30px;
+    }
+
+    @media (max-width: 755px) {
+        .navbar .main-nav .navbar-brand img {
+            width: 103px;
+        }
+
+        .join-btn svg {
+            width: 12px;
+            height: 12px;
+        }
+
+        .join-btn {
+            padding: 6px 7px;
+            font-size: 11px;
+            line-height: 1.1;
+            gap: 2px;
+        }
+
+        .humbarger-icon {
+            padding: 9px 10px;
+            font-size: 9px;
+        }
+
+        .bookmark svg {
+            height: 24px;
+            width: 25px;
+        }
+
+        .navbar .main-nav .bookmark .data-count {
+            right: -5px;
+            font-size: 5px;
+            top: -6px;
+        }
+
+        #navbarSupportedContent {
+            margin-top: 1px;
+        }
+
+        .hero-section .titles {
+            font-size: 29px;
+        }
+    }
+
+
+    .menu-title {
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 12px;
+        color: #33637e;
+    }
+
+    .mobile-navbar-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-navbar-menu li {
+        padding-bottom: 10px;
+        border-bottom: 1px dashed #ccc;
+        margin-bottom: 10px;
+    }
+
+    .mobile-navbar-menu li a {
+        text-decoration: none;
+        color: #00abc8;
+        font-size: 16px;
+        display: block;
+    }
+
+    .mobile-navbar-scrollable {
+        max-height: calc(100vh - 80px);
+        overflow-y: auto;
+        padding: 20px;
+    }
+
+
+    @media (max-width: 575.98px) {
+        .menu-title {
+            font-size: 16px;
+        }
+
+        .mobile-navbar-menu li a {
+            font-size: 14px;
+        }
+    }
+
+
+    /* .mobile-menu-wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 40px;
@@ -236,108 +299,52 @@
         font-size: 16px;
         line-height: 24px;
         margin-bottom: 0;
-    }
+    } */
 </style>
 <div class="collapse navbar-collapse mobile-navbar" id="navbarSupportedContent">
-    <section class="mobile-menu-wrapper container mx-auto">
-        <div class="mobile-single-menu-wrapper">
-            <h4 class="menu-title">Find professional support</h4>
-            <ul class="mobile-navbar-menu">
-                <li>
-                    <a href="">Find a counsellor</a>
-                </li>
-                <li>
-                    <a href="">How can counselling help</a>
-                </li>
-                <li>
-                    <a href="">What is pastoral care</a>
-                </li>
-                <li>
-                    <a href="">Helpful resources</a>
-                </li>
-                <li>
-                    <a href="">Find support FAQs</a>
-                </li>
-                <li>
-                    <a href="">How to make a complaint</a>
-                </li>
-            </ul>
+    <section class="container mobile-navbar-scrollable p-4">
+        <div class="row gy-4">
+            <div class="col-6 col-md-3">
+                <h4 class="menu-title">Find professional support</h4>
+                <ul class="mobile-navbar-menu">
+                    <li><a href="#">Find a counsellor</a></li>
+                    <li><a href="#">How can counselling help</a></li>
+                    <li><a href="#">What is pastoral care</a></li>
+                    <li><a href="#">Helpful resources</a></li>
+                    <li><a href="#">Find support FAQs</a></li>
+                    <li><a href="#">How to make a complaint</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-3">
+                <h4 class="menu-title">Professional training</h4>
+                <ul class="mobile-navbar-menu">
+                    <li><a href="#">Counselling training</a></li>
+                    <li><a href="#">Pastoral care training</a></li>
+                    <li><a href="#">Find a training course</a></li>
+                    <li><a href="#">Find a placement</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-3">
+                <h4 class="menu-title">Join Aims</h4>
+                <ul class="mobile-navbar-menu">
+                    <li><a href="#">Counselling membership</a></li>
+                    <li><a href="#">Pastoral care membership</a></li>
+                    <li><a href="#">Become a friend</a></li>
+                    <li><a href="#">Membership fees</a></li>
+                    <li><a href="#">Membership FAQs</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-3">
+                <h4 class="menu-title">Find professional support</h4>
+                <ul class="mobile-navbar-menu">
+                    <li><a href="#">Find a counsellor</a></li>
+                    <li><a href="#">How can counselling help</a></li>
+                    <li><a href="#">What is pastoral care</a></li>
+                    <li><a href="#">Helpful resources</a></li>
+                    <li><a href="#">Find support FAQs</a></li>
+                    <li><a href="#">How to make a complaint</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="mobile-single-menu-wrapper">
-            <h4 class="menu-title">Professional training</h4>
-            <ul class="mobile-navbar-menu">
-                <li>
-                    <a href="">Counselling training</a>
-                </li>
-                <li>
-                    <a href="">Pastoral care training</a>
-                </li>
-                <li>
-                    <a href="">Find a training course</a>
-                </li>
-                <li>
-                    <a href="">Find a placement</a>
-                </li>
-            </ul>
-        </div>
-        <div class="mobile-single-menu-wrapper">
-            <h4 class="menu-title">Join Aims</h4>
-            <ul class="mobile-navbar-menu">
-                <li>
-                    <a href="">Counselling membership</a>
-                </li>
-                <li>
-                    <a href="">Pastoral care membership</a>
-                </li>
-                <li>
-                    <a href="">Become a friend</a>
-                </li>
-                <li>
-                    <a href="">Membership fees</a>
-                </li>
-                <li>
-                    <a href="">Membership FAQs</a>
-                </li>
-            </ul>
-        </div>
-        <div class="mobile-single-menu-wrapper">
-            <h4 class="menu-title">Find professional support</h4>
-            <ul class="mobile-navbar-menu">
-                <li>
-                    <a href="">Find a counsellor</a>
-                </li>
-                <li>
-                    <a href="">How can counselling help</a>
-                </li>
-                <li>
-                    <a href="">What is pastoral care</a>
-                </li>
-                <li>
-                    <a href="">Helpful resources</a>
-                </li>
-                <li>
-                    <a href="">Find support FAQs</a>
-                </li>
-                <li>
-                    <a href="">How to make a complaint</a>
-                </li>
-            </ul>
-        </div>
-
     </section>
-    {{-- <ul class="accordion list-unstyled" id="accordionExample">
-        <x-frontend.nav-link name="Directory" @class(['active' => Request::is('directory*')]) href="{{ route('directory.index') }}" />
-
-        @guest
-            <x-frontend.nav-link name="Membership" @class(['active' => Request::is('membership*')]) href="{{ route('membership.index') }}" />
-        @endguest
-        <x-frontend.nav-link name="Insights" @class(['active' => Request::is('insight*')]) href="{{ route('article.index') }}" />
-        <x-frontend.nav-link name="About Us" @class(['active' => Request::is('about*')]) href="{{ route('about.index') }}" />
-        <x-frontend.nav-link name="Events" @class(['active' => Request::is('event*')]) href="{{ route('event.index') }}" />
-        @auth
-            <x-frontend.nav-link name="Profile" href="{{ route('dashboard') }}" />
-        @else
-            <x-frontend.nav-link name="Login" href="{{ route('login') }}" />
-        @endauth
-    </ul> --}}
 </div>
