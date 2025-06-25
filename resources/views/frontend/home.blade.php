@@ -277,7 +277,7 @@
     @endif
 
     <!-- Event Section Start -->
-    {{-- <x-frontend.section class="event-section">
+    <x-frontend.section class="event-section">
 
         <div class="row mb-4 align-items-center">
             <div class="col-6 mb-4">
@@ -299,7 +299,7 @@
                 </div>
             </div>
         </div>
-    </x-frontend.section> --}}
+    </x-frontend.section>
     <!-- Event Section End -->
 
 @endsection
