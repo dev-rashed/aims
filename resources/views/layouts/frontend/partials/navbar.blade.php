@@ -305,46 +305,70 @@
     <section class="container mobile-navbar-scrollable p-4">
         <div class="row gy-4">
             <div class="col-6 col-md-3">
-                <h4 class="menu-title">Find professional support</h4>
-                <ul class="mobile-navbar-menu">
-                    <li><a href="#">Find a counsellor</a></li>
-                    <li><a href="#">How can counselling help</a></li>
-                    <li><a href="#">What is pastoral care</a></li>
-                    <li><a href="#">Helpful resources</a></li>
-                    <li><a href="#">Find support FAQs</a></li>
-                    <li><a href="#">How to make a complaint</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md-3">
-                <h4 class="menu-title">Professional training</h4>
-                <ul class="mobile-navbar-menu">
-                    <li><a href="#">Counselling training</a></li>
-                    <li><a href="#">Pastoral care training</a></li>
-                    <li><a href="#">Find a training course</a></li>
-                    <li><a href="#">Find a placement</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md-3">
                 <h4 class="menu-title">Join Aims</h4>
                 <ul class="mobile-navbar-menu">
-                    <li><a href="#">Counselling membership</a></li>
-                    <li><a href="#">Pastoral care membership</a></li>
-                    <li><a href="#">Become a friend</a></li>
-                    <li><a href="#">Membership fees</a></li>
+                    <li><a href="#">Counselling Membership</a></li>
+                    <li><a href="#">Pastoral Care Membership</a></li>
+                    <li><a href="#">Become A Friend</a></li>
+                    <li><a href="#">Organization</a></li>
+                    <li><a href="#">Membership Fees</a></li>
+                    <li><a href="#">Revivers</a></li>
                     <li><a href="#">Membership FAQs</a></li>
                 </ul>
             </div>
+
+
             <div class="col-6 col-md-3">
-                <h4 class="menu-title">Find professional support</h4>
+                <h4 class="menu-title">Islamic Professional Training </h4>
                 <ul class="mobile-navbar-menu">
-                    <li><a href="#">Find a counsellor</a></li>
-                    <li><a href="#">How can counselling help</a></li>
-                    <li><a href="#">What is pastoral care</a></li>
-                    <li><a href="#">Helpful resources</a></li>
-                    <li><a href="#">Find support FAQs</a></li>
-                    <li><a href="#">How to make a complaint</a></li>
+                    <li><a href="#">Counselling Training </a></li>
+                    <li><a href="#">LIPC</a></li>
+                </ul>
+                <h4 class="menu-title">Contact </h4>
+                <ul class="mobile-navbar-menu">
+                    <li><a href="#">Facebook </a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+                <h4 class="menu-title">What’s On </h4>
+                <ul class="mobile-navbar-menu">
+                    <li><a href="#">Events </a></li>
+                </ul>
+
+            </div>
+            <div class="col-6 col-md-3">
+                <h4 class="menu-title">Legal</h4>
+                <ul class="mobile-navbar-menu">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Return Policy </a></li>
+                </ul>
+                <h4 class="menu-title">About</h4>
+                <ul class="mobile-navbar-menu">
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Advisors</a></li>
+                    <li><a href="#">Global Ambassadors </a></li>
+                    <li><a href="#">Ethical Standards</a></li>
+                </ul>
+
+
+            </div>
+
+            <div class="col-6 col-md-3">
+                <h4 class="menu-title">Insights </h4>
+                <ul class="mobile-navbar-menu">
+                    <li><a href="#">Articles</a></li>
+                </ul>
+                <h4 class="menu-title">Find Support </h4>
+                <ul class="mobile-navbar-menu">
+                    <li><a href="#">Find A Counsellor</a></li>
+                    <li><a href="#">Find A Chaplain </a></li>
+                    <li><a href="#">Find A Coach </a></li>
+                    <li><a href="#">Find A Raqi </a></li>
+                    <li><a href="#">Find A Imam </a></li>
                 </ul>
             </div>
+
+
         </div>
     </section>
 </div>

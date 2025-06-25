@@ -218,7 +218,7 @@
     <!-- Video Section End -->
 
 
-    <section class="section ethical-framework">
+    <section class="section ethical-framework" style="padding-bottom: 83px !important;">
         <div class="container">
             <figure class="image-layer">
                 <img src="https://new.aimsonline.org/build/assets/ethical.d7408e95.png" alt="" class="img-fluid">
@@ -253,7 +253,7 @@
 
     @if (sectionSetting('insight_section'))
         <!-- Article Section Start -->
-        <x-frontend.section class="article-section bg-gray-100">
+        <x-frontend.section class="article-section bg-gray-100" style="padding-bottom: 83px !important">
             <div class="row mb-4">
                 <div class="col-12 mb-4">
                     <div class="section-heading">
@@ -277,12 +277,11 @@
     @endif
 
     <!-- Event Section Start -->
-    <x-frontend.section class="event-section">
+    {{-- <x-frontend.section class="event-section">
 
         <div class="row mb-4 align-items-center">
             <div class="col-6 mb-4">
                 <div class="section-heading">
-                    {{-- <p class="sub-heading text-yellow mb-0">Resources</p> --}}
                     <h1 class="heading heading-after">Our Events</h1>
                 </div>
             </div>
@@ -299,11 +298,8 @@
                     @endforeach
                 </div>
             </div>
-            {{-- <div class="col-12 text-center mt-2">
-            <a href="{{route('event.index')}}" class="text-primary-500">View All</a>
-        </div> --}}
         </div>
-    </x-frontend.section>
+    </x-frontend.section> --}}
     <!-- Event Section End -->
 
 @endsection
@@ -311,6 +307,23 @@
     <style>
         .section {
             padding: 114px 0 0 0;
+        }
+
+        .nice-select .option:hover,
+        .nice-select .option.focus,
+        .nice-select .option.selected.focus {
+            background-color: #0f7d97;
+        }
+
+        .nice-select-dropdown ul li {
+            margin-bottom: 0px !important;
+            color: #000000 !important;
+            border-bottom: 1px solid #000000;
+        }
+
+
+        .nice-select.open .nice-select-dropdown {
+            box-shadow: 0 20px 60px #00000010;
         }
 
         /* === Section Heading === */
@@ -578,6 +591,16 @@
         .circle-icon div h4 {
             font-weight: 600;
         }
+
+        .ethical-framework .ethical-content .text p {
+            color: #000000;
+        }
+
+        .article-description,
+        .article-description * {
+            color: #000 !important;
+        }
+
 
         /* === Responsive === */
         @media (max-width: 1200px) {
