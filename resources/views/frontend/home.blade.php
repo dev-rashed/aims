@@ -117,7 +117,7 @@
             </div>
         </div>
 
-        <section class="section">
+        <section class="section" style="padding-top: 36px !important;">
 
             <div class="workshop-wrapper">
                 <div class="image-section">
