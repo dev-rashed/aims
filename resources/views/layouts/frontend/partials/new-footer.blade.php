@@ -254,7 +254,7 @@
     }
 
     .footer__logo {
-        width: 200px;
+        width: 114px;
         height: auto;
         display: block;
         margin-bottom: 1rem;
