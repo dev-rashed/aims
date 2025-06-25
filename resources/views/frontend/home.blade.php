@@ -165,8 +165,7 @@
                 </div>
 
                 <div class="image-content">
-                    <img src="https://www.acc-uk.org/wp-content/uploads/2024/12/1d3445fb-385a-43ef-8721-e0b190695d07-1024x574.jpg.webp"
-                        alt="Counselling">
+                    <img src="{{ asset('images/counselling.jpeg') }}" alt="Counselling">
                 </div>
             </div>
 
@@ -256,7 +255,7 @@
         <x-frontend.section class="article-section bg-gray-100" style="padding-bottom: 83px !important">
             <div class="row mb-4">
                 <div class="col-12 mb-4">
-                    <div class="section-heading">
+                    <div class="section-heading" style="margin-bottom: 0px !important;">
                         <p class="sub-heading text-yellow mb-0">Resources</p>
                         <h1 class="heading heading-after">Learning</h1>
                     </div>
@@ -312,13 +311,13 @@
         .nice-select .option:hover,
         .nice-select .option.focus,
         .nice-select .option.selected.focus {
-            background-color: #0f7d97;
+            /* background-color: #0f7d97; */
         }
 
         .nice-select-dropdown ul li {
             margin-bottom: 0px !important;
             color: #000000 !important;
-            border-bottom: 1px solid #000000;
+            /* border-bottom: 1px solid #000000; */
         }
 
 
