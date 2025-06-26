@@ -128,10 +128,7 @@
 
         <section class="section" style="padding-top: 36px !important;">
 
-            <div class="workshop-wrapper">
-                <div class="image-section">
-                    <img src="{{ asset('images/workshop.jpeg') }}" alt="Workshop">
-                </div>
+            <div class="workshop-wrapper odd">
                 <div class="content-section">
                     <p class="tagline">PROFESSIONAL TRAINING</p>
                     <h1>Pastoral care workshops and courses</h1>
@@ -147,9 +144,12 @@
                     </p>
                     <a href="#" class="button">Find out more...</a>
                 </div>
+                <div class="image-section">
+                    <img src="{{ asset('images/workshop.jpeg') }}" alt="Workshop">
+                </div>
             </div>
 
-            <div class="training-container">
+            <div class="workshop-wrapper even">
                 <div class="text-content">
                     <span class="tagline">PROFESSIONAL TRAINING</span>
                     <h1>Counselling training</h1>
@@ -178,7 +178,7 @@
                 </div>
             </div>
 
-            <div class="workshop-wrapper awards">
+            <div class="workshop-wrapper odd">
                 <div class="content-section" style="background-color: #f5a623">
                     <p class="tagline">Awards</p>
                     <h1>Pastoral care workshops and courses</h1>
@@ -393,8 +393,7 @@
         }
 
         /* === Layout Wrappers === */
-        .workshop-wrapper,
-        .training-container {
+        .workshop-wrapper {
             display: flex;
             flex-wrap: wrap;
             border-radius: 2px;
@@ -404,11 +403,13 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
         }
 
-        .awards {
-            display: flex;
-            flex-wrap: wrap;
+
+
+        .workshop-wrapper.odd {
             flex-direction: row-reverse;
         }
+
+
 
         /* === Image Sections === */
         .image-section,
@@ -643,6 +644,14 @@
         }
 
         @media (max-width: 992px) {
+            .workshop-wrapper.odd {
+                flex-direction: column-reverse;
+            }
+
+            .workshop-wrapper.even {
+                flex-direction: column-reverse;
+            }
+
             .section-heading {
                 font-size: 1.8rem;
             }
