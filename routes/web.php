@@ -45,6 +45,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 // if (config('app.env') == 'local') {
 Route::get('test', function () {
     return now()->createFromFormat('Y-m-d', '2024-02-03')->diffInMonths(now());
@@ -57,6 +59,15 @@ Route::get('/{id}/login', function ($id) {
 // }
 
 Route::get('/', HomeController::class)->name('home');
+
+
+
+Route::get('lipc', function () {
+    return view('frontend.lipc');
+})->name('lipc');
+
+
+
 
 Route::middleware(['guest:web'])->as('membership.')->prefix('membership')->controller(MembershipController::class)->group(function () {
     Route::get('/', 'index')->name('index');
