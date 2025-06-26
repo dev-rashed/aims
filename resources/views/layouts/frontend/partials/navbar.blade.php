@@ -322,7 +322,7 @@
                 <h4 class="menu-title">Islamic Professional Training </h4>
                 <ul class="mobile-navbar-menu">
                     <li><a href="#">Counselling Training </a></li>
-                    <li><a href="#">LIPC</a></li>
+                    <li><a href="{{ route('lipc') }}">LIPC</a></li>
                 </ul>
                 <h4 class="menu-title">Contact </h4>
                 <ul class="mobile-navbar-menu">
