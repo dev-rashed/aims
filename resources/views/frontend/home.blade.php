@@ -644,6 +644,11 @@
         }
 
         @media (max-width: 992px) {
+            .circle-icon div img {
+                width: 160px;
+                height: auto;
+            }
+
             .workshop-wrapper.odd {
                 flex-direction: column-reverse;
             }
