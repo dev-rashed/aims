@@ -273,6 +273,7 @@
 
             <div class="row gy-5">
                 @foreach ($articles as $article)
+                    @dd($article)
                     <x-frontend.article-card :article="$article" class="col-sm-6 col-lg-4 col-xl-3" />
                 @endforeach
 
