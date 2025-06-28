@@ -332,21 +332,21 @@
                 </ul>
                 <h4 class="menu-title">What’s On </h4>
                 <ul class="mobile-navbar-menu">
-                    <li><a href="#">Events </a></li>
+                    <li><a href="https://aimsonline.org/event">Events </a></li>
                 </ul>
 
             </div>
             <div class="col-6 col-md-3">
                 <h4 class="menu-title">Legal</h4>
                 <ul class="mobile-navbar-menu">
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Return Policy </a></li>
+                    <li><a href="https://aimsonline.org/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="https://aimsonline.org/return-policy">Return Policy </a></li>
                 </ul>
                 <h4 class="menu-title">About</h4>
                 <ul class="mobile-navbar-menu">
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Advisors</a></li>
-                    <li><a href="#">Global Ambassadors </a></li>
+                    <li><a href="https://aimsonline.org/team">Team</a></li>
+                    <li><a href="https://aimsonline.org/aims-advisors">Advisors</a></li>
+                    <li><a href="https://aimsonline.org/ambassadors">Global Ambassadors </a></li>
                     <li><a href="#">Ethical Standards</a></li>
                 </ul>
 
