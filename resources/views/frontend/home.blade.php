@@ -612,14 +612,15 @@
 
         .info-box {
             transition: all 0.3s ease;
+            transform: translateY(0);
         }
 
         .info-box:hover {
-            background-color: #eaf4ff;
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(-10px);
+            box-shadow: 0 7px 10px rgba(108, 108, 108, 0.1);
             cursor: pointer;
         }
+
 
         /* === Responsive === */
         @media (max-width: 1200px) {
