@@ -162,8 +162,9 @@
         <div class="row gy-5 mb-5 align-items-start">
             <!-- Logo -->
             <div class="col-lg-2">
-                <a href="https://www.acc-uk.org" class="footer__logo-link">
-                    <img src="{{ uploadedFile(setting('footer_logo')) }}" alt="ACC logo" class="footer__logo">
+                <a href="/" class="footer__logo-link">
+                    <img src="https://new.aimsonline.org//storage/setting/9MOmfPHu7uSLbOKS.svg" alt="ACC logo"
+                        class="footer__logo">
                 </a>
             </div>
 
@@ -178,7 +179,7 @@
                         </p>
                         <p class="footer__contact">
                             <a href="mailto:office@acc-uk.org" class="footer__link footer__link--highlight">e:
-                                office@acc-uk.org</a>
+                                office@aimsonline.org</a>
                         </p>
                         <p class="footer__text">International House, 36–38 Cornhill, London, EC3V 3NG</p>
                     </div>
@@ -217,7 +218,7 @@
                     <!-- Social -->
                     <div class="col-md-6 col-lg-2">
                         <h5 class="footer__title">Follow us on:</h5>
-                        <div class="d-flex gap-2">
+                        <div class="d-flex gap-3">
                             <a href="#" target="_blank"><img
                                     src="https://www.acc-uk.org/wp-content/uploads/2022/09/logo-facebook.svg"
                                     alt="Facebook" class="footer__social-icon"></a>
@@ -235,13 +236,30 @@
     </div>
 
     <!-- Bottom Bar -->
-    <div class="footer__bottom bg-light py-3">
+    {{-- <div class="footer__bottom bg-light py-3">
         <div
             class="container d-flex flex-column flex-lg-row justify-content-between align-items-center text-muted small text-center text-lg-start">
             <div class="mb-2 mb-lg-0">{{ setting('copyright') }}</div>
             <div class="mb-2 mb-lg-0">Icons created by Sarah Palmer</div>
         </div>
-    </div>
+    </div> --}}
+    <footer class="footer-section py-3 bg-light border-top">
+        <div class="container">
+            <div class="row justify-content-between align-items-center text-center text-md-start">
+                <div class="col-md-9">
+                    <p class="mb-1 text-muted">
+                        © 2025 ACC UK | Registered Charity 1018559, SC039810, company limited by guarantee, registered
+                        in England 2791541
+                    </p>
+                    <p class="mb-0 text-muted">Icons created by Sarah Palmer</p>
+                </div>
+                <div class="col-md-3 text-md-end mt-3 mt-md-0">
+                    <p class="mb-0 text-muted">Website by <strong>AIMS ONLINE</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </footer>
 
 <style>
@@ -250,7 +268,12 @@
     }
 
     footer * {
-        line-height: 1.8;
+        line-height: 1.3;
+    }
+
+    ul li {
+        margin-bottom: 8px;
+        color: #fff;
     }
 
     .footer__logo {
@@ -268,7 +291,7 @@
     }
 
     .footer__text {
-        font-size: 14px;
+        font-size: 1rem;
         color: #6c757d;
     }
 
@@ -285,11 +308,11 @@
     .footer__link {
         font-weight: 600;
         color: #307c96;
-        font-size: 14px;
         text-decoration: none;
         display: inline-block;
         margin-bottom: 0.4rem;
         transition: color 0.2s ease;
+        font-size: 1rem;
     }
 
     .footer__link:hover {
@@ -302,21 +325,65 @@
     }
 
     .footer__link--highlight:hover {
-        color: #e57f00;
+        color: #e57f00 !important;
+        text-decoration: underline !important;
     }
 
     .footer__social-icon {
-        width: 32px;
-        height: 32px;
+        width: 45px;
+        height: 45px;
         object-fit: contain;
         transition: transform 0.3s ease;
     }
 
-    .footer__social-icon:hover {
-        transform: scale(1.1);
+    .footer__social-icon {
+        display: inline-block;
+        transition: transform 0.3s ease;
     }
+
+    .footer__social-icon:hover {
+        animation: bounce-up 0.5s;
+    }
+
+    @keyframes bounce-up {
+        0% {
+            transform: translateY(0);
+        }
+
+        30% {
+            transform: translateY(-8px);
+        }
+
+        50% {
+            transform: translateY(0);
+        }
+
+        70% {
+            transform: translateY(-4px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
 
     .footer__bottom {
         border-top: 1px dashed #ccc;
+    }
+
+    .footer-section {
+        font-family: 'Inter', sans-serif;
+        /* Optional: match font style */
+        font-size: 0.95rem;
+        background-color: #f8f9fa;
+        /* Light gray background */
+    }
+
+    .footer-section p {
+        margin-bottom: 0.2rem !important;
+        color: #444 !important;
+        font-size: 1rem !important;
+        /* Slightly darker text */
     }
 </style>
