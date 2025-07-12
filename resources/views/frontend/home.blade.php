@@ -140,7 +140,7 @@
 
             <div class="workshop-wrapper odd">
                 <div class="content-section">
-                    <p class="tagline">PROFESSIONAL TRAINING</p>
+                    <p class="tagline">Pastoral Care</p>
                     <h1>Pastoral Care & Community Support Training</h1>
                     <p>At AIMS, we recognise <strong>pastoral care</strong>—or <em>rahmah-based community support</em>—as a
                         core
@@ -164,7 +164,7 @@
 
             <div class="workshop-wrapper even">
                 <div class="text-content">
-                    <span class="tagline">PROFESSIONAL TRAINING</span>
+                    <span class="tagline">Counselling Training</span>
                     <h1>Continuing Professional Development (CPD) with AIMS</h1>
                     <p>At AIMS, we are committed to the <strong>ongoing professional growth</strong> of those involved in
                         counselling,
