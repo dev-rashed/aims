@@ -51,35 +51,45 @@
             <div class="row text-center justify-content-center g-4 circle-icon">
                 <!-- Counselling -->
                 <div class="col-12 col-md-3">
-                    <div class="info-box p-4">
-                        <img src="{{ asset('images/info-icon-one.svg') }}" class="img-fluid mb-3" alt="Counselling Icon">
-                        <h4 class="text-success">COUNSELLING</h4>
-                    </div>
+                    <a href="#" class="text-black">
+                        <div class="info-box p-4">
+                            <img src="{{ asset('images/info-icon-one.svg') }}" class="img-fluid mb-3"
+                                alt="Counselling Icon">
+                            <h4 class="text-success">COUNSELLING</h4>
+                        </div>
+                    </a>
                 </div>
 
                 <!-- Coaching -->
                 <div class="col-12 col-md-3">
-                    <div class="info-box p-4">
-                        <img src="{{ asset('images/info-icon-two.svg') }}" class="img-fluid mb-3" alt="Coaching Icon">
-                        <h4 class="text-danger">COACHING</h4>
-                    </div>
+                    <a href="#" class="text-black">
+                        <div class="info-box p-4">
+                            <img src="{{ asset('images/info-icon-two.svg') }}" class="img-fluid mb-3" alt="Coaching Icon">
+                            <h4 class="text-danger">COACHING</h4>
+                        </div>
+                    </a>
                 </div>
 
                 <!-- Spiritual Direction -->
                 <div class="col-12 col-md-3">
-                    <div class="info-box p-4">
-                        <img src="{{ asset('images/info-icon-three.svg') }}" class="img-fluid mb-3"
-                            alt="Spiritual Direction Icon">
-                        <h4 class="text-warning">SPIRITUAL DIRECTION</h4>
-                    </div>
+                    <a href="#" class="text-black">
+                        <div class="info-box p-4">
+                            <img src="{{ asset('images/info-icon-three.svg') }}" class="img-fluid mb-3"
+                                alt="Spiritual Direction Icon">
+                            <h4 class="text-warning">SPIRITUAL DIRECTION</h4>
+                        </div>
+                    </a>
                 </div>
 
                 <!-- Pastoral Care -->
                 <div class="col-12 col-md-3">
-                    <div class="info-box p-4">
-                        <img src="{{ asset('images/info-icon-four.svg') }}" class="img-fluid mb-3" alt="Pastoral Care Icon">
-                        <h4 class="text-info">PASTORAL CARE</h4>
-                    </div>
+                    <a href="{{ route('pastoral-care') }}" class="text-black">
+                        <div class="info-box p-4">
+                            <img src="{{ asset('images/info-icon-four.svg') }}" class="img-fluid mb-3"
+                                alt="Pastoral Care Icon">
+                            <h4 class="text-info">PASTORAL CARE</h4>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
