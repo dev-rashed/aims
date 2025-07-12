@@ -308,9 +308,9 @@
                 <h4 class="menu-title">Join Aims</h4>
                 <ul class="mobile-navbar-menu">
                     <li><a href="#">Counselling Membership</a></li>
-                    <li><a href="#">Pastoral Care Membership</a></li>
+                    <li><a href="{{ route('pastoral-care') }}">Pastoral Care Membership</a></li>
                     <li><a href="#">Become A Friend</a></li>
-                    <li><a href="#">Organization</a></li>
+                    <li><a href="{{ route('organisation') }}">Organisation</a></li>
                     <li><a href="#">Membership Fees</a></li>
                     <li><a href="#">Revivers</a></li>
                     <li><a href="#">Membership FAQs</a></li>
@@ -321,7 +321,7 @@
             <div class="col-6 col-md-3">
                 <h4 class="menu-title">Islamic Professional Training </h4>
                 <ul class="mobile-navbar-menu">
-                    <li><a href="#">Counselling Training </a></li>
+                    <li><a href="{{ route('counselling-training') }}">Counselling Training </a></li>
                     <li><a href="{{ route('lipc') }}">LIPC</a></li>
                 </ul>
                 <h4 class="menu-title">Contact </h4>
@@ -332,21 +332,21 @@
                 </ul>
                 <h4 class="menu-title">What’s On </h4>
                 <ul class="mobile-navbar-menu">
-                    <li><a href="https://aimsonline.org/event">Events </a></li>
+                    <li><a href="{{ route('event.index') }}">Events </a></li>
                 </ul>
 
             </div>
             <div class="col-6 col-md-3">
                 <h4 class="menu-title">Legal</h4>
                 <ul class="mobile-navbar-menu">
-                    <li><a href="https://aimsonline.org/privacy-policy">Privacy Policy</a></li>
-                    <li><a href="https://aimsonline.org/return-policy">Return Policy </a></li>
+                    <li><a href="{{ route('page.details', 'privacy-policy') }}">Privacy Policy</a></li>
+                    <li><a href="{{ route('page.details', 'return-policy') }}">Return Policy </a></li>
                 </ul>
                 <h4 class="menu-title">About</h4>
                 <ul class="mobile-navbar-menu">
-                    <li><a href="https://aimsonline.org/team">Team</a></li>
-                    <li><a href="https://aimsonline.org/aims-advisors">Advisors</a></li>
-                    <li><a href="https://aimsonline.org/ambassadors">Global Ambassadors </a></li>
+                    <li><a href="{{ route('team') }}">Team</a></li>
+                    <li><a href="{{ route('advisors') }}">Advisors</a></li>
+                    <li><a href="{{ route('ambassadors') }}">Global Ambassadors </a></li>
                     <li><a href="#">Ethical Standards</a></li>
                 </ul>
 
@@ -360,11 +360,11 @@
                 </ul>
                 <h4 class="menu-title">Find Support </h4>
                 <ul class="mobile-navbar-menu">
-                    <li><a href="https://aimsonline.org/directory">Find A Counsellor</a></li>
-                    <li><a href="https://aimsonline.org/directory">Find A Chaplain </a></li>
-                    <li><a href="https://aimsonline.org/directory">Find A Coach </a></li>
-                    <li><a href="https://aimsonline.org/directory">Find A Raqi </a></li>
-                    <li><a href="https://aimsonline.org/directory">Find A Imam </a></li>
+                    <li><a href="{{ route('directory.index') }}">Find A Counsellor</a></li>
+                    <li><a href="{{ route('directory.index') }}">Find A Chaplain </a></li>
+                    <li><a href="{{ route('directory.index') }}">Find A Coach </a></li>
+                    <li><a href="{{ route('directory.index') }}">Find A Raqi </a></li>
+                    <li><a href="{{ route('directory.index') }}">Find A Imam </a></li>
                 </ul>
             </div>
 

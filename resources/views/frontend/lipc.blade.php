@@ -1,8 +1,8 @@
 @extends('layouts.frontend.app')
 
-@section('meta_keywords', 'About Us')
+@section('meta_keywords', 'LIPC')
 
-@section('title', 'About Us')
+@section('title', 'LIPC')
 
 @section('content')
 
@@ -57,15 +57,15 @@
 
                 <h2 class="section-heading">How It Works: From Study to License</h2>
                 <ol>
-                    <li><strong>Completion of a Recognised Programme</strong><br>
+                    <li class="text-muted"><strong>Completion of a Recognised Programme</strong><br>
                         The candidate must complete a comprehensive programme in Islamic psychology and counselling. This
                         includes academic coursework, supervised clinical or pastoral training, personal development, and
                         spiritual cultivation rooted in Islamic tradition.</li>
-                    <li><strong>Evaluation and Mentorship</strong><br>
+                    <li class="text-muted"><strong>Evaluation and Mentorship</strong><br>
                         Participants are assessed not just for academic excellence, but for spiritual maturity, ethical
                         conduct, and therapeutic readiness. They are mentored and observed by qualified scholars and
                         professionals who themselves are recognized within this tradition.</li>
-                    <li><strong>Awarding the LIPC (Ijazah)</strong><br>
+                    <li class="text-muted"><strong>Awarding the LIPC (Ijazah)</strong><br>
                         Upon successful completion and demonstration of competency, the candidate is granted the Ijazah—the
                         LIPC designation—indicating that they are now authorised to operate as a Licensed Islamic
                         Psychospiritual Counsellor or Licensed Islamic Professional Counsellor. This license is both a
@@ -77,8 +77,8 @@
                 <p>Currently, those who complete either of the following two programmes are eligible to apply for the LIPC:
                 </p>
                 <ul>
-                    <li>PICSP: Professional Islamic Certificate in Psychospiritual Counselling</li>
-                    <li>M.IPC: Master of Islamic Psychospiritual Counselling</li>
+                    <li class="text-muted">PICSP: Professional Islamic Certificate in Psychospiritual Counselling</li>
+                    <li class="text-muted">M.IPC: Master of Islamic Psychospiritual Counselling</li>
                 </ul>
                 <p>These programmes combine rigorous academic study, therapeutic training, and Islamic spiritual formation,
                     ensuring graduates are both professionally skilled and spiritually grounded.</p>
@@ -90,9 +90,9 @@
                     their licensed status.</p>
                 <p><strong>Examples:</strong></p>
                 <ul>
-                    <li>Fatima Ahmed, LIPC</li>
-                    <li>Dr. Yusuf Khan, MBBS, M.IPC, LIPC</li>
-                    <li>Amina Rahman, PICSP, LIPC</li>
+                    <li class="text-muted">Fatima Ahmed, LIPC</li>
+                    <li class="text-muted">Dr. Yusuf Khan, MBBS, M.IPC, LIPC</li>
+                    <li class="text-muted">Amina Rahman, PICSP, LIPC</li>
                 </ul>
                 <p>This designation communicates to the public, employers, and the broader Muslim community that the
                     individual is a Licensed Islamic Psychospiritual Counsellor-a person entrusted to offer mental health
@@ -110,15 +110,15 @@
                     In an era where mental health is deeply misunderstood or neglected in many communities, the LIPC model:
                 </p>
                 <ul>
-                    <li>
+                    <li class="text-muted">
                         <strong>Restores trust:</strong> The Ijazah system has historically provided assurance that the
                         individual is grounded in both knowledge and character.
                     </li>
-                    <li>
+                    <li class="text-muted">
                         <strong>Bridges the gap:</strong> LIPC ensures counsellors are fluent in both Islamic and
                         psychological languages, able to serve clients holistically.
                     </li>
-                    <li>
+                    <li class="text-muted">
                         <strong>Protects sacred trust:</strong> The inner realities of the soul require caretakers who are
                         not only trained, but authorised to help others navigate spiritual and emotional distress with
                         wisdom, sensitivity, and accountability.
@@ -141,21 +141,7 @@
 
             <!-- Right Card -->
             <div class="col-lg-4">
-                <div class="card hover-card shadow-sm border-0 rounded-4 overflow-hidden h-100">
-                    <div class="position-relative" style="height: 220px; overflow: hidden;">
-                        <img src="https://www.acc-uk.org/wp-content/uploads/2023/03/priscilla-du-preez-DAFh1p9huAE-unsplash-1024x683.jpg.webp"
-                            class="w-100 h-100 object-fit-cover" alt="Pastoral Care">
-                    </div>
-                    <div class="card-body p-4">
-                        <h5 class="card-title section-heading mb-3">Pastoral Care Membership</h5>
-                        <p class="card-text">
-                            The work of ACC Pastoral Care has a strong emphasis on enabling individuals,
-                            churches and organisations to develop good practice. We endeavour to be a Christian
-                            resource that enables the missional purpose, potential and practice...
-                        </p>
-                        <a href="#" class="btn btn-orange mt-3">Read more...</a>
-                    </div>
-                </div>
+                @include('frontend.comon.pastoral-care-card')
             </div>
         </div>
     </div>

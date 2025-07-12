@@ -131,18 +131,21 @@
             <div class="workshop-wrapper odd">
                 <div class="content-section">
                     <p class="tagline">PROFESSIONAL TRAINING</p>
-                    <h1>Pastoral care workshops and courses</h1>
-                    <p>We are committed to promoting quality pastoral care through our training resources which enable:</p>
-                    <ul>
-                        <li><strong>ALL</strong> of church to develop quality relationships</li>
-                        <li><strong>SOME</strong> of church to develop their pastoral gifts</li>
-                        <li><strong>a FEW</strong> of church to equip the all and the some</li>
-                    </ul>
-                    <p>
-                        Each resource is interactive, raising questions, encouraging the sharing of experience, embracing
-                        discussion, developing skills where appropriate and using scripture and prayer.
+                    <h1>Pastoral Care & Community Support Training</h1>
+                    <p>At AIMS, we recognise <strong>pastoral care</strong>—or <em>rahmah-based community support</em>—as a
+                        core
+                        Islamic responsibility rooted in compassion (<em>rahmah</em>), empathy, and service to others. It
+                        involves nurturing meaningful relationships, offering emotional and spiritual support, and fostering
+                        a
+                        sense of collective responsibility and care within the <strong>Ummah</strong> and wider society.</p>
+
+                    <p>Inspired by Islamic teachings on mercy, mutual support, and accountability, we believe that
+                        <strong>caring for others is a communal duty (fard kifayah)</strong>—something we are all called to
+                        in
+                        different ways, wherever Allah places us.
                     </p>
-                    <a href="#" class="button">Find out more...</a>
+
+                    <a href="{{ route('pastoral-care') }}" class="button">Find out more...</a>
                 </div>
                 <div class="image-section">
                     <img src="{{ asset('images/workshop.jpeg') }}" alt="Workshop">
@@ -152,25 +155,26 @@
             <div class="workshop-wrapper even">
                 <div class="text-content">
                     <span class="tagline">PROFESSIONAL TRAINING</span>
-                    <h1>Counselling training</h1>
-
-                    <h3>Qualifying training</h3>
-                    <p>
-                        If you are hoping to qualify as a counsellor, or progress in the profession,
-                        we have a directory of courses run by organisations affiliated with ACC at all levels.
-                        Visit our <a href="#" class="highlight-link">Find a training course</a>.
+                    <h1>Continuing Professional Development (CPD) with AIMS</h1>
+                    <p>At AIMS, we are committed to the <strong>ongoing professional growth</strong> of those involved in
+                        counselling,
+                        mental
+                        health, and spiritual care within Muslim communities worldwide.
+                    </p>
+                    <p>We work in partnership with organisations and institutions that <strong>offer Islamic counselling and
+                            mental
+                            health training</strong> across the globe, and we actively support the development and
+                        recognition of
+                        culturally and spiritually informed practice.
+                    </p>
+                    <p>Our <strong>CPD programme</strong> is designed to enhance skills, deepen knowledge, and strengthen
+                        ethical and
+                        faith-integrated practice in counselling and pastoral care. Whether you're a practitioner, trainer,
+                        or
+                        student, you'll find our events enriching and relevant.
                     </p>
 
-                    <h3>Continuing Professional Development (CPD) with ACC</h3>
-                    <p>
-                        Throughout the year we offer relevant, enriching and affordable CPD training to support your
-                        continuing professional development as a counsellor/psychotherapist. We invite trusted and
-                        experienced trainers to deliver high quality teaching in-person and online. If you are an ACC
-                        member, you will receive regular emails about any upcoming ACC training as well as training
-                        delivered by members or associates, and free members-only forums.
-                    </p>
-
-                    <a href="#" class="button">Find out more</a>
+                    <a href="{{ route('counselling-training') }}" class="button">Find out more</a>
                 </div>
 
                 <div class="image-content">
@@ -182,17 +186,17 @@
                 <div class="content-section" style="background-color: #f5a623">
                     <p class="tagline">Awards</p>
                     <h1>Pastoral care workshops and courses</h1>
-                    <p>We are committed to promoting quality pastoral care through our training resources which enable:</p>
-                    <ul>
-                        <li><strong>ALL</strong> of church to develop quality relationships</li>
-                        <li><strong>SOME</strong> of church to develop their pastoral gifts</li>
-                        <li><strong>a FEW</strong> of church to equip the all and the some</li>
-                    </ul>
-                    <p>
-                        Each resource is interactive, raising questions, encouraging the sharing of experience, embracing
-                        discussion, developing skills where appropriate and using scripture and prayer.
-                    </p>
-                    <a href="#" class="button">Find out more...</a>
+                    <p>The Association of Islamic Mental Health Specialists (AIMS) is proud to announce the National Muslim
+                        Mental Health Awards. This prestigious event is a significant project of AIMS, designed to recognise
+                        and celebrate the outstanding contributions of individuals and organisations dedicated to advancing
+                        mental health within the Muslim community.
+                        Synopsis
+                        The National Muslim Mental Health Awards, a key initiative by AIMS, will highlight the exceptional
+                        efforts of mental health professionals, advocates, researchers, and community leaders who have made
+                        significant strides in promoting mental well-being among Muslims. Through this event, we aim to
+                        honour those who have demonstrated excellence, innovation, and compassion in their work, thereby
+                        inspiring others to contribute to this vital field.....</p>
+                    <a href="https://muslimmentalhealthawards.com/" class="button">Find out more...</a>
                 </div>
                 <div class="image-section">
                     <img src="{{ asset('images/awards.jpeg') }}" alt="Workshop">

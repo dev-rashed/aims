@@ -186,11 +186,11 @@
 
                     <!-- ACC Members -->
                     <div class="col-md-6 col-lg-3">
-                        <h5 class="footer__title">ACC members</h5>
+                        <h5 class="footer__title">AIMS members</h5>
                         <ul class="footer__list">
                             <li><a href="#" class="footer__link">My account</a></li>
                             <li><a href="#" class="footer__link">Upcoming events</a></li>
-                            <li><a href="#" class="footer__link">ACC store</a></li>
+                            <li><a href="{{ route('membership.index') }}" class="footer__link">Membership</a></li>
                         </ul>
                     </div>
 

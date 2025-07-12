@@ -66,6 +66,18 @@ Route::get('lipc', function () {
     return view('frontend.lipc');
 })->name('lipc');
 
+Route::get('organisation', function () {
+    return view('frontend.organisation');
+})->name('organisation');
+
+Route::get('counselling-training', function () {
+    return view('frontend.counselling-training');
+})->name('counselling-training');
+
+Route::get('pastoral-care', function () {
+    return view('frontend.pastoral-care');
+})->name('pastoral-care');
+
 
 
 
