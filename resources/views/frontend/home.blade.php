@@ -195,7 +195,7 @@
             <div class="workshop-wrapper odd">
                 <div class="content-section" style="background-color: #f5a623">
                     <p class="tagline">Awards</p>
-                    <h1>Pastoral care workshops and courses</h1>
+                    <h1>Mental Health Awards</h1>
                     <p>The Association of Islamic Mental Health Specialists (AIMS) is proud to announce the National Muslim
                         Mental Health Awards. This prestigious event is a significant project of AIMS, designed to recognise
                         and celebrate the outstanding contributions of individuals and organisations dedicated to advancing
