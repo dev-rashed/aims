@@ -90,7 +90,7 @@
             <div class="d-flex flex-wrap justify-content-center row g-4">
                 <!-- Specialist Directory Card -->
                 <div class="col-12 col-sm-6 col-md-4 p-2">
-                    <a href="https://aimsonline.org/directory">
+                    <a href="{{ route('directory.index') }}">
                         <div class="card-overlay card-overlay-specialist w-100 h-64">
                             <img src="{{ asset('images/image-1.jpeg') }}"
                                 onerror="this.onerror=null;this.src='https://placehold.co/600x400/FFB74D/ffffff?text=Specialist+Directory';"
@@ -102,7 +102,7 @@
 
                 <!-- Ethical & Islamic Card -->
                 <div class="col-12 col-sm-6 col-md-4 p-2">
-                    <a href="https://aimsonline.org/ethical-standards">
+                    <a href="{{ route('ethical.index') }}">
                         <div class="card-overlay card-overlay-ethical w-100 h-64">
                             <img src="{{ asset('images/image-3.jpeg') }}"
                                 onerror="this.onerror=null;this.src='https://placehold.co/600x400/4CAF50/ffffff?text=Ethical+%26+Islamic';"
@@ -114,7 +114,7 @@
 
                 <!-- Empowering Professionals Card -->
                 <div class="col-12 col-sm-6 col-md-4 p-2">
-                    <a href="https://aimsonline.org/membership">
+                    <a href="{{ route('membership.index') }}">
                         <div class="card-overlay card-overlay-empowering w-100 h-64">
                             <img src="{{ asset('images/image-2.jpeg') }}"
                                 onerror="this.onerror=null;this.src='https://placehold.co/600x400/2196F3/ffffff?text=Empowering+Professionals';"
