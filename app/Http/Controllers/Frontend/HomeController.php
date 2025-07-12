@@ -18,6 +18,6 @@ class HomeController extends Controller
         $services = Service::latest('id')->get();
         $events = Event::where('date', '>=', date('Y-m-d'))->latest('id')->take(6)->get();
 
-        return view('frontend.home', compact('articles','professions','services','events'));
+        return view('frontend.home', compact('articles', 'professions', 'services', 'events'));
     }
 }
