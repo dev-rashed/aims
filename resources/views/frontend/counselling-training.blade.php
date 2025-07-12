@@ -1,8 +1,8 @@
 @extends('layouts.frontend.app')
 
-@section('meta_keywords', 'LIPC')
+@section('meta_keywords', 'Counselling Training')
 
-@section('title', 'LIPC')
+@section('title', 'Counselling Training')
 
 @section('content')
 
