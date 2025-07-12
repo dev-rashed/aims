@@ -179,9 +179,9 @@
                         </p>
                         <p class="footer__contact">
                             <a href="mailto:office@acc-uk.org" class="footer__link footer__link--highlight">e:
-                                office@aimsonline.org</a>
+                                info@aimsonline.org</a>
                         </p>
-                        <p class="footer__text">International House, 36–38 Cornhill, London, EC3V 3NG</p>
+                        <p class="footer__text">Unit F2, The Whitechapel Centre, 85 Myrdle Street, London, E1 1HL</p>
                     </div>
 
                     <!-- ACC Members -->
@@ -248,10 +248,9 @@
             <div class="row justify-content-between align-items-center text-center text-md-start">
                 <div class="col-md-9">
                     <p class="mb-1 text-muted">
-                        © 2025 ACC UK | Registered Charity 1018559, SC039810, company limited by guarantee, registered
-                        in England 2791541
+                        ©️ 2025 AIMS | Registered CIC, 16031775
                     </p>
-                    <p class="mb-0 text-muted">Icons created by Sarah Palmer</p>
+                    {{-- <p class="mb-0 text-muted">Icons created by Sarah Palmer</p> --}}
                 </div>
                 <div class="col-md-3 text-md-end mt-3 mt-md-0">
                     <p class="mb-0 text-muted">Website by <strong>AIMS ONLINE</strong></p>
