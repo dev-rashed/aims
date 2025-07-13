@@ -49,6 +49,9 @@
                     </svg>
                     Join Aims
                 </a>
+                <a href="#" class="join-btn me-3">
+                    Donate
+                </a>
                 <div class="humbarger-icon" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
                     style="cursor: pointer;">
@@ -307,11 +310,11 @@
             <div class="col-6 col-md-3">
                 <h4 class="menu-title">Join Aims</h4>
                 <ul class="mobile-navbar-menu">
-                    <li><a href="#">Counselling Membership</a></li>
+                    <li><a href="{{ route('directory.index') }}">Counselling Membership</a></li>
                     <li><a href="{{ route('pastoral-care') }}">Pastoral Care Membership</a></li>
                     <li><a href="#">Become A Friend</a></li>
                     <li><a href="{{ route('organisation') }}">Organisation</a></li>
-                    <li><a href="#">Membership Fees</a></li>
+                    <li><a href="{{ route('membership.index') }}">Membership Fees</a></li>
                     <li><a href="#">Revivers</a></li>
                     <li><a href="#">Membership FAQs</a></li>
                 </ul>
@@ -347,7 +350,7 @@
                     <li><a href="{{ route('team') }}">Team</a></li>
                     <li><a href="{{ route('advisors') }}">Advisors</a></li>
                     <li><a href="{{ route('ambassadors') }}">Global Ambassadors </a></li>
-                    <li><a href="#">Ethical Standards</a></li>
+                    <li><a href={{ route('ethical.index') }}">Ethical Standards</a></li>
                 </ul>
 
 
@@ -356,7 +359,7 @@
             <div class="col-6 col-md-3">
                 <h4 class="menu-title">Insights </h4>
                 <ul class="mobile-navbar-menu">
-                    <li><a href="#">Articles</a></li>
+                    <li><a href="{{ route('article.index') }}">Articles</a></li>
                 </ul>
                 <h4 class="menu-title">Find Support </h4>
                 <ul class="mobile-navbar-menu">

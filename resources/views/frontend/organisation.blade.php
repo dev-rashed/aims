@@ -168,7 +168,7 @@
 
             <!-- Right Card -->
             <div class="col-lg-4">
-                @include('frontend.comon.pastoral-care-card')
+                @include('frontend.comon.membership-card')
             </div>
         </div>
     </div>

@@ -33,7 +33,7 @@
         <!-- Main Content -->
         <div class="row g-5 align-items-start">
             <!-- Left Content -->
-            <div>
+            <div class="col-lg-8">
                 <h2 class="section-heading">Pastoral Care & Community Support Training</h2>
                 <p>At AIMS, we recognise <strong>pastoral care</strong>—or <em>rahmah-based community support</em>—as a core
                     Islamic responsibility rooted in compassion (<em>rahmah</em>), empathy, and service to others. It
@@ -118,9 +118,9 @@
             </div>
 
             <!-- Right Card -->
-            {{-- <div class="col-lg-4">
-                @include('frontend.comon.pastoral-care-card')
-            </div> --}}
+            <div class="col-lg-4">
+                @include('frontend.comon.membership-card')
+            </div>
         </div>
     </div>
     <!-- About Section End -->

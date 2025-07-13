@@ -174,9 +174,9 @@
                     <!-- Contact Info -->
                     <div class="col-md-6 col-lg-3">
                         <h5 class="footer__title">Contact us</h5>
-                        <p class="footer__contact">
+                        {{-- <p class="footer__contact">
                             <a href="tel:02476449694" class="footer__link footer__link--highlight">t: 024 7644 9694</a>
-                        </p>
+                        </p> --}}
                         <p class="footer__contact">
                             <a href="mailto:office@acc-uk.org" class="footer__link footer__link--highlight">e:
                                 info@aimsonline.org</a>
@@ -188,8 +188,8 @@
                     <div class="col-md-6 col-lg-3">
                         <h5 class="footer__title">AIMS members</h5>
                         <ul class="footer__list">
-                            <li><a href="#" class="footer__link">My account</a></li>
-                            <li><a href="#" class="footer__link">Upcoming events</a></li>
+                            <li><a href="{{ route('login') }}" class="footer__link">My account</a></li>
+                            <li><a href="{{ route('event.index') }}" class="footer__link">Upcoming events</a></li>
                             <li><a href="{{ route('membership.index') }}" class="footer__link">Membership</a></li>
                         </ul>
                     </div>
@@ -199,7 +199,9 @@
                         <h5 class="footer__title">Information</h5>
                         <ul class="footer__list">
                             <li><a href="{{ route('about.index') }}" class="footer__link">About us</a></li>
-                            <li><a href="#" class="footer__link">Careers and jobs</a></li>
+                            <li><a href="/aims-ambassadors" class="footer__link">
+                                    Become an Ambassadors</a>
+                            </li>
                             <li><a href="#" class="footer__link">How to make a complaint</a></li>
                         </ul>
                     </div>
@@ -208,7 +210,8 @@
                     <div class="col-md-6 col-lg-2">
                         <h5 class="footer__title">Policies</h5>
                         <ul class="footer__list">
-                            <li><a href="#" class="footer__link">Privacy policy</a></li>
+                            <li><a href="{{ route('page.details', 'privacy-policy') }}" class="footer__link">Privacy
+                                    policy</a></li>
                             <li><a href="#" class="footer__link">Data retention policy</a></li>
                             <li><a href="#" class="footer__link">Cookie consent</a></li>
                             <li><a href="#" class="footer__link">Copyright</a></li>
