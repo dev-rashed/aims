@@ -61,22 +61,11 @@ Route::get('/{id}/login', function ($id) {
 Route::get('/', HomeController::class)->name('home');
 
 
-
-Route::get('lipc', function () {
-    return view('frontend.lipc');
-})->name('lipc');
-
-Route::get('organisation', function () {
-    return view('frontend.organisation');
-})->name('organisation');
-
-Route::get('counselling-training', function () {
-    return view('frontend.counselling-training');
-})->name('counselling-training');
-
-Route::get('pastoral-care', function () {
-    return view('frontend.pastoral-care');
-})->name('pastoral-care');
+Route::view('lipc', 'frontend.lipc')->name('lipc');
+Route::view('become-a-friend', 'frontend.become-friend')->name('become-a-friend');
+Route::view('organisation', 'frontend.organisation')->name('organisation');
+Route::view('counselling-training', 'frontend.counselling-training')->name('counselling-training');
+Route::view('pastoral-care', 'frontend.pastoral-care')->name('pastoral-care');
 
 
 

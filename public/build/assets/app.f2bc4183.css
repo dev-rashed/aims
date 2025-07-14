@@ -5653,7 +5653,7 @@ fieldset[disabled] .lobibox .lobibox-btn.lobibox-btn-default:hover {
     border-color: #262626 !important;
 }
 .bg-yellow {
-    background-color: #f4af1c !important;
+    background-color: #ff9015 !important;
 }
 .text-yellow {
     color: #f4af1c !important;
@@ -5737,7 +5737,7 @@ a:hover {
     color: #0b3e6c !important;
 }
 .btn:hover {
-    background-color: #f4af1c !important;
+    background-color: #ff9015 !important;
     border-color: #f4af1c !important;
     color: #fff !important;
 }
@@ -5850,7 +5850,7 @@ a:hover {
     background: #555;
 }
 .read-more-btn {
-    background-color: #f4af1c !important;
+    background-color: #ff9015 !important;
     text-transform: uppercase;
     color: #fff !important;
     padding: 9px 16px !important;
@@ -6776,7 +6776,7 @@ a:hover {
     border-top-left-radius: 0;
 }
 .membership-section .nav-pills .nav-link.active {
-    background-color: #f4af1c !important;
+    background-color: #ff9015 !important;
 }
 .section-checkout {
     background-repeat: no-repeat;

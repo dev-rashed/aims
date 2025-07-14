@@ -312,7 +312,7 @@
                 <ul class="mobile-navbar-menu">
                     <li><a href="{{ route('directory.index') }}">Counselling Membership</a></li>
                     <li><a href="{{ route('pastoral-care') }}">Pastoral Care Membership</a></li>
-                    <li><a href="#">Become A Friend</a></li>
+                    <li><a href="{{ route('become-a-friend') }}">Become A Friend</a></li>
                     <li><a href="{{ route('organisation') }}">Organisation</a></li>
                     <li><a href="{{ route('membership.index') }}">Membership Fees</a></li>
                     <li><a href="#">Revivers</a></li>
@@ -350,7 +350,7 @@
                     <li><a href="{{ route('team') }}">Team</a></li>
                     <li><a href="{{ route('advisors') }}">Advisors</a></li>
                     <li><a href="{{ route('ambassadors') }}">Global Ambassadors </a></li>
-                    <li><a href={{ route('ethical.index') }}">Ethical Standards</a></li>
+                    <li><a href="{{ route('ethical.index') }}">Ethical Standards</a></li>
                 </ul>
 
 

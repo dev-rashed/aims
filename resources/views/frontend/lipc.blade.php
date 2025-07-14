@@ -18,7 +18,7 @@
                         fill="#fff" />
                 </svg>
             </span>
-            <a href="#" class="text-white align-self-center">Lipc</a>
+            <a href="#" class="text-white align-self-center">LIPC</a>
         </div>
     </section>
     <!-- About Section Start -->
