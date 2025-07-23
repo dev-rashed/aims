@@ -62,7 +62,7 @@
 
                 <!-- Coaching -->
                 <div class="col-12 col-md-3">
-                    <a href="#" class="text-black">
+                    <a href="{{ route('coaching') }}" class="text-black">
                         <div class="info-box p-4">
                             <img src="{{ asset('images/info-icon-two.svg') }}" class="img-fluid mb-3" alt="Coaching Icon">
                             <h4 class="text-danger">COACHING</h4>
@@ -72,7 +72,7 @@
 
                 <!-- Spiritual Direction -->
                 <div class="col-12 col-md-3">
-                    <a href="#" class="text-black">
+                    <a href="{{ route('spiritual-direction') }}" class="text-black">
                         <div class="info-box p-4">
                             <img src="{{ asset('images/info-icon-three.svg') }}" class="img-fluid mb-3"
                                 alt="Spiritual Direction Icon">
