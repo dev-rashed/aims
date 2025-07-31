@@ -110,10 +110,10 @@
         }
 
         .article-details-section .details-image Specificity: (0, 2, 0) {
-            width: 100%;
-            height: 321px;
-            -o-object-fit: cover;
-            object-fit: fill;
+            width: 100% !important;
+            height: 321px !important;
+            -o-object-fit: cover !important;
+            object-fit: fill !important;
         }
     </style>
 @endpush
