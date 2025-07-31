@@ -108,5 +108,12 @@
             margin-bottom: 8px;
             color: #000000 !important;
         }
+
+        .article-details-section .details-image Specificity: (0, 2, 0) {
+            width: 100%;
+            height: 321px;
+            -o-object-fit: cover;
+            object-fit: fill;
+        }
     </style>
 @endpush
