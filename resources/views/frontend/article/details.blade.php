@@ -109,7 +109,7 @@
             color: #000000 !important;
         }
 
-        .article-details-section .details-image Specificity: (0, 2, 0) {
+        .details-image {
             width: 100% !important;
             height: 321px !important;
             -o-object-fit: cover !important;
