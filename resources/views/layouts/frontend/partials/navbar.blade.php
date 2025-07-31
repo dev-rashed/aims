@@ -181,7 +181,7 @@
 
     @media (max-width: 755px) {
         .navbar .main-nav .navbar-brand img {
-            width: 103px;
+            width: 89px;
         }
 
         .join-btn svg {
@@ -190,8 +190,8 @@
         }
 
         .join-btn {
-            padding: 6px 7px;
-            font-size: 11px;
+            padding: 8px 5px;
+            font-size: 8px;
             line-height: 1.1;
             gap: 2px;
         }
@@ -202,8 +202,8 @@
         }
 
         .bookmark svg {
-            height: 24px;
-            width: 25px;
+            height: 21px;
+            width: 21px;
         }
 
         .navbar .main-nav .bookmark .data-count {
@@ -314,6 +314,14 @@
                     <li><a href="{{ route('pastoral-care') }}">Pastoral Care Membership</a></li>
                     <li><a href="{{ route('become-a-friend') }}">Become A Friend</a></li>
                     <li><a href="{{ route('organisation') }}">Organisation</a></li>
+
+                    <li><a href="{{ route('ruqya') }}">Ruqiyah</a></li>
+                    <li><a href="{{ route('coaching') }}">Coaching</a></li>
+                    <li><a href="{{ route('spiritual-direction') }}">Spiritual Direction</a></li>
+
+
+
+
                     <li><a href="{{ route('membership.index') }}">Membership Fees</a></li>
                     <li><a href="#">Revivers</a></li>
                     <li><a href="#">Membership FAQs</a></li>

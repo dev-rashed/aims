@@ -1,8 +1,8 @@
 @extends('layouts.frontend.app')
 
-@section('meta_keywords', 'Ruqya')
+@section('meta_keywords', 'Ruqiyah')
 
-@section('title', 'Ruqya')
+@section('title', 'Ruqiyah')
 
 @section('content')
     <!-- Banner Section -->
@@ -17,7 +17,7 @@
                         fill="#fff" />
                 </svg>
             </span>
-            <a href="#" class="text-white align-self-center">Ruqya Direction</a>
+            <a href="#" class="text-white align-self-center">Ruqiyah </a>
         </div>
     </section>
 
@@ -26,13 +26,13 @@
         <nav aria-label="breadcrumb" class="mb-4">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Ruqya Direction</li>
+                <li class="breadcrumb-item active" aria-current="page">Ruqiyah </li>
             </ol>
         </nav>
 
         <!-- Main Content -->
         <div class="row align-items-start">
-            <div class="col-lg-12">
+            <div class="col-lg-8">
                 <h2 class="section-heading mt-5">The Importance of Ethical Ruqyah Practice</h2>
                 <p>
                     As demand for Ruqyah Shari’ah grows, so does the responsibility on practitioners to act ethically,
@@ -46,12 +46,6 @@
                     for all Ruqyah providers to uphold the <strong>highest standards of Islamic ethics, safeguarding, and
                         professionalism</strong>.
                 </p>
-
-
-
-
-
-
                 <div class="accordion" id="cpdAccordion">
 
                     <div class="accordion-item">
@@ -518,9 +512,9 @@
             </div>
 
             <!-- Right Card -->
-            {{-- <div class="col-lg-4">
+            <div class="col-lg-4">
                 @include('frontend.comon.membership-card')
-            </div> --}}
+            </div>
         </div>
     </div>
 @endsection
