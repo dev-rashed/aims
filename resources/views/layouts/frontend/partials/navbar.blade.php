@@ -337,9 +337,9 @@
                 </ul>
                 <h4 class="menu-title">Contact </h4>
                 <ul class="mobile-navbar-menu">
-                    <li><a href="#">Facebook </a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">YouTube</a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/aimsonlinedirectory">Facebook </a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/aimsdirectory/">Instagram</a></li>
+                    <li><a target="_blank" href="#">YouTube</a></li>
                 </ul>
                 <h4 class="menu-title">What’s On </h4>
                 <ul class="mobile-navbar-menu">

@@ -202,7 +202,7 @@
                             <li><a href="/aims-ambassadors" class="footer__link">
                                     Become an Ambassadors</a>
                             </li>
-                            <li><a href="#" class="footer__link">How to make a complaint</a></li>
+                            <li><a href="{{ route('ethical.index') }}" class="footer__link">Ethical Framework</a></li>
                         </ul>
                     </div>
 
@@ -212,9 +212,9 @@
                         <ul class="footer__list">
                             <li><a href="{{ route('page.details', 'privacy-policy') }}" class="footer__link">Privacy
                                     policy</a></li>
-                            <li><a href="#" class="footer__link">Data retention policy</a></li>
-                            <li><a href="#" class="footer__link">Cookie consent</a></li>
-                            <li><a href="#" class="footer__link">Copyright</a></li>
+                            <li><a href="{{ route('data-retention-policy') }}" class="footer__link">Data retention policy</a></li>
+                            <li><a href="{{ route('cookie-consent') }}" class="footer__link">Cookie consent</a></li>
+                            <li><a href="{{ route('copyright-notice') }}" class="footer__link">Copyright</a></li>
                         </ul>
                     </div>
 
@@ -222,14 +222,14 @@
                     <div class="col-md-6 col-lg-2">
                         <h5 class="footer__title">Follow us on:</h5>
                         <div class="d-flex gap-3">
-                            <a href="#" target="_blank"><img
-                                    src="https://www.acc-uk.org/wp-content/uploads/2022/09/logo-facebook.svg"
+                            <a href="https://www.facebook.com/aimsonlinedirectory" target="_blank"><img
+                                    src="{{ asset('icon/facebook.svg') }}"
                                     alt="Facebook" class="footer__social-icon"></a>
                             <a href="#" target="_blank"><img
-                                    src="https://www.acc-uk.org/wp-content/uploads/2023/12/x-icon.svg" alt="X"
+                                    src="{{ asset('icon/x-icon.svg') }}" alt="X"
                                     class="footer__social-icon"></a>
-                            <a href="#" target="_blank"><img
-                                    src="https://www.acc-uk.org/wp-content/uploads/2022/09/logo-instagram.svg"
+                            <a href="https://www.instagram.com/aimsdirectory/" target="_blank"><img
+                                    src="{{ asset('icon/instagram.svg') }}"
                                     alt="Instagram" class="footer__social-icon"></a>
                         </div>
                     </div>
@@ -273,7 +273,7 @@
         line-height: 1.3;
     }
 
-    ul li {
+    footer ul li {
         margin-bottom: 8px;
         color: #fff;
     }
