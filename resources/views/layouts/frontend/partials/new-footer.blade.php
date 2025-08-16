@@ -200,7 +200,7 @@
                         <ul class="footer__list">
                             <li><a href="{{ route('about.index') }}" class="footer__link">About us</a></li>
                             <li><a href="/aims-ambassadors" class="footer__link">
-                                    Become an Ambassadors</a>
+                                    Become an Ambassador</a>
                             </li>
                             <li><a href="{{ route('ethical.index') }}" class="footer__link">Ethical Framework</a></li>
                         </ul>
