@@ -315,7 +315,7 @@
                     <li><a href="{{ route('become-a-friend') }}">Become A Friend</a></li>
                     <li><a href="{{ route('organisation') }}">Organisation</a></li>
 
-                    <li><a href="{{ route('ruqya') }}">Ruqiyah</a></li>
+                    <li><a href="{{ route('ruqya') }}">Ruqyah</a></li>
                     <li><a href="{{ route('coaching') }}">Coaching</a></li>
                     <li><a href="{{ route('spiritual-direction') }}">Spiritual Direction</a></li>
 

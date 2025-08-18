@@ -1,8 +1,8 @@
 @extends('layouts.frontend.app')
 
-@section('meta_keywords', 'Ruqiyah')
+@section('meta_keywords', 'Ruqyah')
 
-@section('title', 'Ruqiyah')
+@section('title', 'Ruqyah')
 
 @section('content')
     <!-- Banner Section -->
@@ -17,7 +17,7 @@
                         fill="#fff" />
                 </svg>
             </span>
-            <a href="#" class="text-white align-self-center">Ruqiyah </a>
+            <a href="#" class="text-white align-self-center">Ruqyah</a>
         </div>
     </section>
 
@@ -26,7 +26,7 @@
         <nav aria-label="breadcrumb" class="mb-4">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Ruqiyah </li>
+                <li class="breadcrumb-item active" aria-current="page">Ruqyah</li>
             </ol>
         </nav>
 

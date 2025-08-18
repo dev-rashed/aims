@@ -69,7 +69,7 @@ Route::view('pastoral-care', 'frontend.pastoral-care')->name('pastoral-care');
 
 Route::view('coaching', 'frontend.coaching')->name('coaching');
 Route::view('spiritual-direction', 'frontend.spiritual-direction')->name('spiritual-direction');
-Route::view('ruqya', 'frontend.ruqya')->name('ruqya');
+Route::view('ruqyah', 'frontend.ruqya')->name('ruqya');
 Route::view('cookie-consent', 'frontend.cookie_consent')->name('cookie-consent');
 Route::view('copyright-notice', 'frontend.copyright_notice')->name('copyright-notice');
 Route::view('data-retention-policy', 'frontend.data_retention_policy')->name('data-retention-policy');
