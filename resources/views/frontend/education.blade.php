@@ -1,5 +1,7 @@
 @extends('layouts.frontend.app')
 
+@section('title', 'Education')
+
 @section('content')
 
 <!-- Education Section Start -->

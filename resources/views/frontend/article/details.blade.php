@@ -114,6 +114,7 @@
             height: 321px !important;
             -o-object-fit: cover !important;
             object-fit: fill !important;
+            min-height: unset !important;
         }
     </style>
 @endpush

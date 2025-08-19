@@ -1,5 +1,7 @@
 @extends('layouts.frontend.app')
 
+@section('title', 'Career')
+
 @section('content')
 
 <section class="section career-section">

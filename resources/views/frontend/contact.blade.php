@@ -1,5 +1,7 @@
 @extends('layouts.frontend.app')
 
+@section('title', 'Contact')
+
 @section('content')
 
 <!-- Contact Section Start -->
@@ -27,7 +29,7 @@
                                     </div>
 
                                     <x-frontend.recaptcha />
-                                    
+
                                     <div class="mb-3">
                                         <button type="submit" class="btn bg-primary-500 rounded-10 w-100 py-2 text-white fw-bold fs-14">Submit</button>
                                     </div>

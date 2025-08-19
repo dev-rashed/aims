@@ -1,5 +1,7 @@
 @extends('layouts.frontend.app')
 
+@section('title', 'Ethical Standards')
+
 @section('content')
 
 <!-- About Section Start -->

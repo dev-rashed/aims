@@ -2,7 +2,7 @@
 
 @section('meta_keywords', 'aims-advisors')
 
-@section('title', 'Aims Advisors')
+@section('title', 'Advisors')
 
 @section('content')
 

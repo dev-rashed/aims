@@ -8,11 +8,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <meta name="keywords" content="@yield('meta_keywords', 'aims, aims website, aims, education, education website, online study, online, education platform')">
-    <meta name="description" content="@yield('meta_description', 'Home page of ' . url()->current())">
-    <link rel="canonical" href="{{ url()->current() }}" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="description" content="@yield('meta_description', 'Home page of '.url()->current())">
+    <link rel="canonical" href="{{url()->current()}}"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--favicon-->
     <link rel="icon" href="{{ uploadedFile(setting('favicon')) }}" type="image/png" />
 

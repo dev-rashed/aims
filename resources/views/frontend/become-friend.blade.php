@@ -35,7 +35,7 @@
             <div class="col-lg-8">
                 <!-- Left Content -->
                 <h2 class="section-heading">Become a Friend or Associate Member of AIMS</h2>
-                <p class="text-muted">We invite you to become a **Friend of AIMS** or an **Associate Member**, and join our
+                <p class="text-muted">We invite you to become a Friend of AIMS or an Associate Member, and join our
                     growing global community of individuals committed to promoting compassionate, faith-informed mental
                     health and wellbeing within Muslim communities.</p>
                 <p>This option is ideal for those who may not be directly involved in counselling but still wish to stay
