@@ -355,12 +355,12 @@
                 </ul>
                 <h4 class="menu-title">About</h4>
                 <ul class="mobile-navbar-menu">
+                    <li><a href="{{ route('about.index') }}">About us</a></li>
                     <li><a href="{{ route('team') }}">Team</a></li>
                     <li><a href="{{ route('advisors') }}">Advisors</a></li>
                     <li><a href="{{ route('ambassadors') }}">Global Ambassadors </a></li>
                     <li><a href="{{ route('ethical.index') }}">Ethical Standards</a></li>
                 </ul>
-
 
             </div>
 
