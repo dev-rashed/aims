@@ -40,7 +40,7 @@
                                         <div class="text-center">
                                             <div>
                                                 <h3 class="fs-3 fw-bold">{{ $advisor->name }}</h3>
-                                                <p class="mb-0">{{ $advisor->designation ?? 'CO-FOUNDER'}}</p>
+                                                <p class="mb-0">{{ $advisor->designation ?? 'ADVISOR'}}</p>
                                             </div>
 
                                             <div class="my-5">
